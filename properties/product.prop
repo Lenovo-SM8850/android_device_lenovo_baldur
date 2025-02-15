@@ -7,3 +7,7 @@ ro.product.name_for_attestation=TB323FU
 
 # Device name
 ro.product.marketname=Lenovo Legion Tab (8.8",5)
+
+# Remote key provisioning
+remote_provisioning.enable_rkpd=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
