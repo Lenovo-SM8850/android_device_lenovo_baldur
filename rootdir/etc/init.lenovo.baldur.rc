@@ -178,3 +178,11 @@ service setwlansardsi4 /vendor/bin/setwlansardsi4.sh
     user root
     oneshot
     group root root
+
+on property:vendor.lenovo.game_mode=1
+    write /sys/devices/system/cpu/cpu0/thermal/control 300
+    restart thermal-engine
+
+on property:vendor.lenovo.game_mode=0
+    write /sys/devices/system/cpu/cpu0/thermal/control 0
+    restart thermal-engine
