@@ -28,3 +28,6 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/lenovo/sm8850-common/common.mk)
+
+# Include the proprietary files makefile.
+$(call inherit-product, vendor/lenovo/baldur/baldur-vendor.mk)
