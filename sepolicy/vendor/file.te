@@ -1,3 +1,4 @@
+type sysfs_lenovo_rgb, fs_type, sysfs_type;
 type vendor_proc_ito, fs_type, proc_type;
 type vendor_proc_tpver, fs_type, proc_type;
 type vendor_sysfs_spk_id_level, fs_type, sysfs_type;

@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lenovo
+
 # Hardware configuration
 PRODUCT_COPY_FILES += \
     device/lenovo/baldur/configs/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_module_config_primary.xml \
@@ -63,6 +67,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayBaldur \
     FrameworksResTargetBaldur \
+    LineageResOverlayBaldur \
     WifiResOverlayBaldur
 
 # Soong namespaces
