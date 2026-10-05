@@ -329,6 +329,7 @@ vendor/lib64/libmmfp.so
 vendor/lib64/libqll.so
 vendor/lib64/libqllengine.so
 vendor/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so
+vendor/lib64/rfs/dsp/libvpp_frc.so
 
 # Firmware / Security
 vendor/bin/hw/android.hardware.security.onekeymint-service-qti
