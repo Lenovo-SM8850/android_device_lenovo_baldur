@@ -1,0 +1,2 @@
+allow system_app vendor_proc_ito:file { read getattr open };
+allow system_app vendor_proc_tpver:file { read getattr open };
