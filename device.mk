@@ -73,6 +73,26 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/modules.blocklist.system_dlkm:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 
+# Touch
+PRODUCT_PACKAGES += \
+    LineageParts \
+    LenovoTouchscreenRotation \
+    init.lenovo.touch.rc \
+    vendor.lineage.touch-service.lenovo
+
+$(call soong_config_set_bool,lenovotouch,high_touch_polling_rate,true)
+$(call soong_config_set,lenovotouch,high_report_rate_node,/proc/HighReportRate)
+$(call soong_config_set,lenovotouch,high_report_rate_enable,1)
+$(call soong_config_set,lenovotouch,high_report_rate_disable,0)
+$(call soong_config_set_bool,lenovopower,double_tap_to_wake,true)
+$(call soong_config_set,lenovopower,gesture_node,/proc/gesture_mode)
+$(call soong_config_set,lenovopower,gesture_enable,1)
+$(call soong_config_set,lenovopower,gesture_disable,0)
+$(call inherit-product, hardware/lenovo/touch/touch.mk)
+
+# Cover
+PRODUCT_PACKAGES += lenovo-cover
+
 # Camera capabilities
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
