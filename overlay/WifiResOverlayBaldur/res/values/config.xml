@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="config_wifiP2pDeviceNamePrefix" translatable="false">Lenovo Legion Tab_</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Lenovo Legion Tab</string>
+</resources>
