@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += ueventd.baldur.rc
 PRODUCT_PACKAGES += \
     init.baldur.rc
 
+# Pen
+PRODUCT_PACKAGES += \
+    init.baldur.pen.rc
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/NVTCapacitivePen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/NVTCapacitivePen.idc
 

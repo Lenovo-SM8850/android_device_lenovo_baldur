@@ -12,11 +12,20 @@ prebuilt_etc {
     vendor: true,
 }
 
+// Device fstab.
 prebuilt_etc {
     name: "fstab.qcom",
     src: "fstab.qcom",
     vendor: true,
     vendor_ramdisk_available: true,
+}
+
+// NVT pen
+prebuilt_etc {
+    name: "init.baldur.pen.rc",
+    src: "init.baldur.pen.rc",
+    sub_dir: "init",
+    vendor: true,
 }
 
 prebuilt_etc {

@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: Apache-2.0
+
+runtime_resource_overlay {
+    resource_dirs: ["res"],
+    device_specific: true,
+    name: "LenovoPenResTarget",
+    defaults: ["//device/lenovo/sm8850-common:LenovoPenOverlayDefaults"],
+}
