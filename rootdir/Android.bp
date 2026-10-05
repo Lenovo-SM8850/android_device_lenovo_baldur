@@ -26,3 +26,11 @@ prebuilt_first_stage_ramdisk {
     vendor_ramdisk: true,
     install_in_root: true,
 }
+
+// NVT pen
+prebuilt_etc {
+    name: "init.baldur.pen.rc",
+    src: "etc/init.baldur.pen.rc",
+    sub_dir: "init",
+    vendor: true,
+}
