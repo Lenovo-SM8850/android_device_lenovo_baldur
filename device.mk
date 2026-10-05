@@ -53,7 +53,8 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayBaldur \
-    FrameworksResTargetBaldur
+    FrameworksResTargetBaldur \
+    WifiResOverlayBaldur
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
