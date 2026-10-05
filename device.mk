@@ -90,6 +90,9 @@ $(call soong_config_set,lenovopower,gesture_enable,1)
 $(call soong_config_set,lenovopower,gesture_disable,0)
 $(call inherit-product, hardware/lenovo/touch/touch.mk)
 
+# Cover
+PRODUCT_PACKAGES += lenovo-cover
+
 # Camera capabilities
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
