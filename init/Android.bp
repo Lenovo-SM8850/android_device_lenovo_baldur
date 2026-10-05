@@ -5,6 +5,14 @@
 // Device init
 
 prebuilt_etc {
+    name: "init.baldur.rc",
+    required: ["init.lenovo.rc"],
+    src: "init.baldur.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.qcom",
     src: "fstab.qcom",
     vendor: true,

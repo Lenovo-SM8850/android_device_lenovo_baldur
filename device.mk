@@ -6,6 +6,9 @@
 LOCAL_PATH := device/lenovo/baldur
 DEVICE_PATH := $(LOCAL_PATH)
 
+PRODUCT_PACKAGES += \
+    init.baldur.rc
+
 LENOVO_DEVICE_CONFIG_PATH := device/lenovo/baldur
 
 # Display
