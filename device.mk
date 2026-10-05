@@ -43,6 +43,9 @@ PRODUCT_PACKAGES += ueventd.baldur.rc
 PRODUCT_PACKAGES += \
     init.baldur.rc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/idc/NVTCapacitivePen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/NVTCapacitivePen.idc
+
 # Recovery
 # Recovery touch requires Novatek firmware in the direct search path.
 PRODUCT_COPY_FILES += \
