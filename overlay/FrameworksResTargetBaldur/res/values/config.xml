@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Wi-Fi tablet: ro.radio.noril=yes; no cellular subscription feature. -->
+    <integer name="config_num_physical_slots">0</integer>
+
+    <dimen name="rounded_corner_radius">20dp</dimen>
+
+</resources>
