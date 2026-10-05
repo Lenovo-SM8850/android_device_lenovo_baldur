@@ -5,6 +5,10 @@
 
 LOCAL_PATH := device/lenovo/baldur
 
+# Device init
+PRODUCT_PACKAGES += \
+    init.lenovo.baldur.rc
+
 # Display
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
@@ -61,6 +65,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
+
+# Board post-boot tuning (shared dispatchers select topology)
+PRODUCT_PACKAGES += \
+    init.kernel.post_boot-canoe_5_1.sh \
+    init.kernel.post_boot-canoe_5_2.sh \
+    init.kernel.post_boot-canoe_6_1.sh \
+    init.kernel.post_boot-canoe_default_6_2.sh \
+    init.kernel.post_boot-memory.sh
 
 # Audio and haptic defaults
 PRODUCT_COPY_FILES += \
