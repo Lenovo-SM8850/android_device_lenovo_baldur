@@ -56,24 +56,6 @@ on property:sys.boot_completed=1 && property:ro.vendor.build.type=userdebug
 on property:sys.RemotelyProvisionedKey.fetch.completed=1
     setprop ro.odm.lenovo.attestationkey ${sys.RemotelyProvisionedKey.fetch.completed}
 
-on property:debug.zui.antutu_status=1
-   setprop sys.ui.perfmode.enable 1
-
-on property:debug.zui.antutu_status=2
-   setprop sys.ui.perfmode.enable 1
-
-on property:debug.zui.antutu_status=3
-   setprop sys.ui.perfmode.enable 1
-
-on property:debug.zui.antutu_status=4
-   setprop sys.ui.perfmode.enable 1
-
-on property:debug.zui.antutu_status=0
-   setprop sys.ui.perfmode.enable 1
-
-on property:debug.zui.antutu_status=-1
-   setprop sys.ui.perfmode.enable 0
-
 service setwlansardsi0 /vendor/bin/setwlansardsi0.sh
     disabled
     user root
