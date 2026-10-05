@@ -9,6 +9,7 @@ DEVICE_PATH := device/lenovo/baldur
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
 
+
 # Kernel
 TARGET_KERNEL_SOURCE := vendor/lenovo/sm8850
 TARGET_KERNEL_PLATFORM_TARGET := canoe_perf
@@ -46,6 +47,11 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Verified Boot
 BOARD_AVB_BOOT_ROLLBACK_INDEX := 1749081600

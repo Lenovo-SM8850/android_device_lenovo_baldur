@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Tab Pen Plus: framework type 1 -> BluetoothPenUtils.transPenType(1) = 2. -->
+    <string-array name="config_penIdentityToControllerType" translatable="false">
+        <item>17EF:617F=2</item>
+    </string-array>
+    <string name="config_penSupportedRefreshRate" translatable="false">120.0</string>
+    <string name="config_penInputName" translatable="false">NVTCapacitivePen</string>
+    <string name="config_penUEventDevPath" translatable="false">/devices/platform/novatek_ts</string>
+    <!-- NVT embeds TYPE=TP in UEVENT_TO rather than a separate TYPE key. -->
+    <string name="config_penUEventTarget" translatable="false">PEN_FRAMEWORK TYPE=TP</string>
+    <!-- Ready/MAC CHANGE reports precede identity in the NVT pen report path. -->
+    <bool name="config_penEarlyChangeActivity">true</bool>
+</resources>
