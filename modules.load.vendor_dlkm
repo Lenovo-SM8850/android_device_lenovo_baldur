@@ -56,6 +56,7 @@ hq_ptn3222_repeater.ko
 haptic.ko
 nvt_36xxx.ko
 lenovo_sys_temp.ko
+lenovo_thermal_control.ko
 nvmem_qfprom.ko
 pci-msm-drv.ko
 eom_driver.ko
