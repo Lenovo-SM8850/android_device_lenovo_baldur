@@ -330,18 +330,6 @@ vendor/lib64/libqll.so
 vendor/lib64/libqllengine.so
 vendor/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so
 
-# Face unlock
-vendor/bin/hw/android.hardware.biometrics.face@4.0-service.face
-vendor/firmware/arcface_ta.b00
-vendor/firmware/arcface_ta.b01
-vendor/firmware/arcface_ta.b03
-vendor/firmware/arcface_ta.b04
-vendor/firmware/arcface_ta.b05
-vendor/firmware/arcface_ta.b06
-vendor/firmware/arcface_ta.b07
-vendor/firmware/arcface_ta.b08
-vendor/firmware/arcface_ta.mdt
-
 # Firmware / Security
 vendor/bin/hw/android.hardware.security.onekeymint-service-qti
 vendor/firmware/evass.b00
@@ -386,6 +374,7 @@ vendor/lib64/vendor.qti.gnss-service.so
 vendor/bin/init.qti.media.sh
 vendor/lib64/libqc2vppfilter.so
 vendor/lib64/libvideooptfeature.so
+vendor/lib64/rfs/dsp/libvpp_gfrc_networks.so
 vendor/lib64/rfs/dsp/libvpp_svc_skel.so
 
 # Media / Video
@@ -430,6 +419,7 @@ vendor/lib64/libQnnNetRunDirectV81Skel.so
 vendor/lib64/libqfdservice.so
 vendor/lib64/rfs/dsp/libnsp_ipc_cdsp_skel.so
 vendor/lib64/rfs/dsp/libnspextensioncopyprovider.so
+vendor/lib64/rfs/dsp/libnspextensionfrcprovider.so
 vendor/lib64/rfs/dsp/libnspextensiongenericqnnprovider.so
 vendor/lib64/rfs/dsp/libnspextensionsuperresolutionprovider.so
 vendor/lib64/rfs/dsp/libsvdsp.so
