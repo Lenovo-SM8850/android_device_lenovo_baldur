@@ -80,17 +80,17 @@ on boot
     chown system /sys/devices/system/cpu/hyp_core_ctl/enable
     chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
     chmod 0666 /mnt/vendor/persist/factory/audio/aw_cali.bin
-    # speaker id
+    # Speaker id
     chown media audio /sys/kernel/spk_id_gpio_level/spk_id_level
     # rkp_md5
     chown root shell /sys/kernel/rkp_md5/rkp_md5
-    #add for mpss and cnss ssr
+    #Add for mpss and cnss ssr
     chown system system /sys/class/remoteproc/remoteproc3/recovery
     chmod 0664 /sys/class/remoteproc/remoteproc3/recovery
     write /sys/class/remoteproc/remoteproc3/recovery enabled
     write /sys/kernel/cnss/recovery 1
 
-#camera property start
+#Camera property start
 on property:vendor.lenovocamera.packagename.client=*
     setprop vendor.camera.packagename.client ${vendor.lenovocamera.packagename.client}
 on property:vendor.lenovocamera.packagename.zui=*
@@ -101,7 +101,7 @@ on property:persist.lenovo.camera.superportraitvideo.enable=*
     setprop persist.odm.camera.superportraitvideo.enable ${persist.lenovo.camera.superportraitvideo.enable}
 on property:persist.lenovo.camera.superportraitvideo.level=*
     setprop persist.odm.camera.superportraitvideo.level ${persist.lenovo.camera.superportraitvideo.level}
-#camera property end
+#Camera property end
 
 on property:vendor.display.lcd_density=560
     setprop dalvik.vm.heapgrowthlimit 256m
@@ -120,10 +120,10 @@ on charger
 #service vendor.lowi /vendor/bin/sscrpcd
 #   class core
 #   user system
-#   group system wakelock
-#   capabilities BLOCK_SUSPEND
+#   Group system wakelock
+#   Capabilities BLOCK_SUSPEND
 
-#pd-mapper
+#Pd-mapper
 on property:sys.boot_completed=1 && property:ro.vendor.build.type=userdebug
     mkdir /mnt/vendor/logfs 0644 system system
     mount vfat /dev/block/by-name/logfs /mnt/vendor/logfs rw wait noatime

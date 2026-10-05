@@ -44,7 +44,7 @@
         <param key="logging_level" value ="3" />
         <param key="context_manager_enable" value ="true" />
         <param key="lpi_logging_enable" value ="false" />
-        <!-- change PAL_DEVICE_OUT_ULTRASOUND_DEDICATED backend name when set it to true -->
+        <!-- Change PAL_DEVICE_OUT_ULTRASOUND_DEDICATED backend name when set it to true -->
         <param key="upd_dedicated_be" value ="false" />
         <param key="upd_set_custom_gain" value ="false" />
         <param key="signal_handler" value ="true" />
@@ -773,7 +773,7 @@
             <fractional_sr>0</fractional_sr>
             <!-- To enable external EC reference the flag extec_ref_enabled must be added as 1 -->
             <ext_ec_ref_enabled>0</ext_ec_ref_enabled>
-            <!--specify the WSA supported on the platform
+            <!--Specify the WSA supported on the platform
                 Values: Kareyenda    : 1
                         Kundu        : 2
                         Pandeiro     : 3
@@ -787,9 +787,9 @@
             -->
             <cps_mode>2</cps_mode>
             <vbat_enabled>0</vbat_enabled>
-            <!--specify the supported bit format on speaker end point -->
-            <!--this should be in the form of pal_audio_fmt_id-->
-            <!--e.g <supported_bit_format >PAL_AUDIO_FMT_PCM_S24_LE</supported_bit_format>-->
+            <!--Specify the supported bit format on speaker end point -->
+            <!--This should be in the form of pal_audio_fmt_id-->
+            <!--E.g <supported_bit_format >PAL_AUDIO_FMT_PCM_S24_LE</supported_bit_format>-->
             <!--We support 24 bit for speaker as of now, as some module in ADSP does not support Q31 format-->
             <!--This can be changed to PAL_AUDIO_FMT_PCM_S32_LE if 32 bit e2e support is required-->
             <supported_bit_format>PAL_AUDIO_FMT_PCM_S24_LE</supported_bit_format>
@@ -843,14 +843,14 @@
               <name>PAL_STREAM_VOICE_CALL</name>
               <priority>1</priority>
               <custom-config key="HAC">
-                 <snd_device_name>voice-handset-hac</snd_device_name> <!-- override sound device name with HAC handset -->
+                 <snd_device_name>voice-handset-hac</snd_device_name> <!-- Override sound device name with HAC handset -->
               </custom-config>
           </usecase>
           <usecase>
               <name>PAL_STREAM_VOIP_RX</name>
               <priority>2</priority>
               <custom-config key="HAC">
-                 <snd_device_name>voice-handset-hac</snd_device_name> <!-- override sound device name with HAC handset for voip -->
+                 <snd_device_name>voice-handset-hac</snd_device_name> <!-- Override sound device name with HAC handset for voip -->
               </custom-config>
           </usecase>
           <usecase>
@@ -994,9 +994,9 @@
             <channels>2</channels>
             <snd_device_name>display-port</snd_device_name>
             <fractional_sr>1</fractional_sr>
-            <!--specify the supported bit format on DP end point -->
-            <!--this should be in the form of pal_audio_fmt_id-->
-            <!--e.g <supported_bit_format >PAL_AUDIO_FMT_PCM_S24_3LE</supported_bit_format>-->
+            <!--Specify the supported bit format on DP end point -->
+            <!--This should be in the form of pal_audio_fmt_id-->
+            <!--E.g <supported_bit_format >PAL_AUDIO_FMT_PCM_S24_3LE</supported_bit_format>-->
             <!--We support 24 bit for DP as of now, as SPF needs to conform to IEC 60958 packet format -->
             <!--This can be changed to PAL_AUDIO_FMT_PCM_S32_LE if 32 bit e2e support is required-->
             <supported_bit_format>PAL_AUDIO_FMT_PCM_S24_3LE</supported_bit_format>
@@ -1012,9 +1012,9 @@
             <channels>2</channels>
             <fractional_sr>1</fractional_sr>
             <snd_device_name>display-port</snd_device_name>
-            <!--specify the supported bit format on HDMI end point -->
-            <!--this should be in the form of pal_audio_fmt_id-->
-            <!--e.g <supported_bit_format >PAL_AUDIO_FMT_PCM_S24_3LE</supported_bit_format>-->
+            <!--Specify the supported bit format on HDMI end point -->
+            <!--This should be in the form of pal_audio_fmt_id-->
+            <!--E.g <supported_bit_format >PAL_AUDIO_FMT_PCM_S24_3LE</supported_bit_format>-->
             <!--We support 24 bit for HDMI as of now, as SPF needs to conform to IEC 60958 packet format -->
             <!--This can be changed to PAL_AUDIO_FMT_PCM_S32_LE if 32 bit e2e support is required-->
             <supported_bit_format>PAL_AUDIO_FMT_PCM_S24_3LE</supported_bit_format>
@@ -1054,9 +1054,9 @@
             <channels>2</channels>
             <snd_device_name>display-port1</snd_device_name>
             <fractional_sr>1</fractional_sr>
-            <!--specify the supported bit format on DP end point -->
-            <!--this should be in the form of pal_audio_fmt_id-->
-            <!--e.g <supported_bit_format >PAL_AUDIO_FMT_PCM_S24_3LE</supported_bit_format>-->
+            <!--Specify the supported bit format on DP end point -->
+            <!--This should be in the form of pal_audio_fmt_id-->
+            <!--E.g <supported_bit_format >PAL_AUDIO_FMT_PCM_S24_3LE</supported_bit_format>-->
             <!--We support 24 bit for DP as of now, as SPF needs to conform to IEC 60958 packet format -->
             <!--This can be changed to PAL_AUDIO_FMT_PCM_S32_LE if 32 bit e2e support is required-->
             <supported_bit_format>PAL_AUDIO_FMT_PCM_S24_3LE</supported_bit_format>
@@ -1713,8 +1713,8 @@
                 <!-- Module output channels -->
                 <param out_channels="1" />
                 <!-- Uncomment param lpi_enable="false" to run usecase in NLPI by default -->
-                <!-- move stream container in ACDB to NLPI when this is uncommented -->
-                <!--param lpi_enable="false" /-->
+                <!-- Move stream container in ACDB to NLPI when this is uncommented -->
+                <!--Param lpi_enable="false" /-->
                 <operating_modes>
                     <low_power capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_LPI" />
                     <high_performance capture_profile_handset="SINGLE_MIC_48KHZ_16BIT_FFECNS" capture_profile_headset="SINGLE_MIC_48KHZ_16BIT_HEADSET_FFECNS" />
@@ -1791,7 +1791,7 @@
                 <!-- Module output channels -->
                 <param out_channels="1" />
                 <!-- Uncomment param lpi_enable="false" to run usecase in NLPI by default -->
-                <!--param lpi_enable="false" /-->
+                <!--Param lpi_enable="false" /-->
                 <operating_modes>
                     <low_power capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI" />
                     <low_power_ns capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_FFNS" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_FFNS" />
@@ -1833,7 +1833,7 @@
                 <name>QC_ASR</name>
                 <param vendor_uuid = "018ebfb8-1364-7417-b92e-f6ab16b55431" />
                 <!-- Uncomment param lpi_enable="false" to run usecase in NLPI by default -->
-                <!--param lpi_enable="false" /-->
+                <!--Param lpi_enable="false" /-->
                 <module_Info>
                     <!-- List the SPF module params Ids -->
                     <param asr_input_config_id = "0xC0000057, 0x08001AA4" />
@@ -1866,12 +1866,12 @@
                 <param mmap_frame_length="5" />
                 <!-- Move this flag to common_config if ACD/Sensor PCM Data support car mode in the future -->
                 <param transit_to_non_lpi_on_charging="false" />
-                <!-- whether concurrent detection is supported across different VoiceUI sessions(SVA/Hotword/MMA)-->
+                <!-- Whether concurrent detection is supported across different VoiceUI sessions(SVA/Hotword/MMA)-->
                 <param enable_inter_va_engine_concurrent_detection="true" />
             </config>
             <!-- Multiple stream_config tags can be listed, each with unique -->
             <!-- vendor_uuid. The below tag represents QC Voice UI sound model -->
-            <!-- configuration. ISV must use their own unique vendor_uuid. -->
+            <!-- Configuration. ISV must use their own unique vendor_uuid. -->
             <stream_config>
                 <name>QC_VOICE_UI</name>
                 <param vendor_uuid="68ab2d40-e860-11e3-95ef-0002a5d5c51b" />
@@ -1882,14 +1882,14 @@
                 <!-- Example: param detection_property_list="0x10001,0x10002,0x10003,0x10004"-->
                 <param detection_property_list="" />
                 <!--For now total 3 engines are supported, if more engine instances are needed,-->
-                <!-- do update acdb and usecaseKvManager.xml files by adding more instances    -->
+                <!-- Do update acdb and usecaseKvManager.xml files by adding more instances    -->
                 <param pdk_first_stage_max_engine_count="1"/>
                 <param enable_intra_va_engine_concurrent_detection="true" />
                 <!-- Profile specific data which the algorithm can support -->
                 <param capture_keyword="2000" /> <!-- Default history buffer length -->
-                <param client_capture_read_delay="2000" /> <!-- reserved buffer duration for rt data -->
+                <param client_capture_read_delay="2000" /> <!-- Reserved buffer duration for rt data -->
                 <param pre_roll_duration="500" /> <!-- Default preroll duration -->
-                <!-- durations in us -->
+                <!-- Durations in us -->
                 <param kw_start_tolerance="360000" />
                 <param kw_end_tolerance="240000" />
                 <param data_before_kw_start="360000" />
@@ -1899,7 +1899,7 @@
                 <!-- Module output channels -->
                 <param out_channels="1" />
                 <!-- Uncomment param lpi_enable="false" to run usecase in NLPI by default -->
-                <!--param lpi_enable="false" /-->
+                <!--Param lpi_enable="false" /-->
                 <operating_modes>
                     <low_power capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI" />
                     <high_performance capture_profile_handset="DUAL_MIC_48KHZ_16BIT_FFECNS" capture_profile_headset="SINGLE_MIC_48KHZ_16BIT_HEADSET_FFECNS" />
@@ -1972,7 +1972,7 @@
                 <!-- Module output channels -->
                 <param out_channels="1" />
                 <!-- Uncomment param lpi_enable="false" to run usecase in NLPI by default -->
-                <!--param lpi_enable="false" /-->
+                <!--Param lpi_enable="false" /-->
                 <operating_modes>
                     <low_power capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI" />
                     <high_performance capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_NLPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI" />
@@ -1998,9 +1998,9 @@
                 <param merge_first_stage_sound_models="false" />
                 <!-- Profile specific data which the algorithm can support -->
                 <param capture_keyword="2000" /> <!-- Default history buffer length -->
-                <param client_capture_read_delay="2000" /> <!-- reserved buffer duration for rt data -->
+                <param client_capture_read_delay="2000" /> <!-- Reserved buffer duration for rt data -->
                 <param pre_roll_duration="500" /> <!-- Default preroll duration -->
-                <!-- durations in us -->
+                <!-- Durations in us -->
                 <param kw_start_tolerance="360000" />
                 <param kw_end_tolerance="240000" />
                 <param data_before_kw_start="360000" />
@@ -2010,7 +2010,7 @@
                 <!-- Module output channels -->
                 <param out_channels="1" />
                 <!-- Uncomment param lpi_enable="false" to run usecase in NLPI by default -->
-                <!--param lpi_enable="false" /-->
+                <!--Param lpi_enable="false" /-->
                 <operating_modes>
                     <low_power capture_profile_handset="DUAL_MIC_16KHZ_16BIT_CUSTOM_NS" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_CUSTOM_NS" />
                     <high_performance capture_profile_handset="DUAL_MIC_48KHZ_16BIT_CUSTOM_ECNS" capture_profile_headset="SINGLE_MIC_48KHZ_16BIT_HEADSET_CUSTOM_ECNS" />
@@ -2033,14 +2033,14 @@
                 <param interface_plugin_lib="sva_plugin.so" />
                 <!-- Profile specific data which the algorithm can support -->
                 <param capture_keyword="2000" /> <!-- Default history buffer length -->
-                <param client_capture_read_delay="2000" /> <!-- reserved buffer duration for rt data -->
+                <param client_capture_read_delay="2000" /> <!-- Reserved buffer duration for rt data -->
                 <param pre_roll_duration="500" /> <!-- Default preroll duration -->
                 <param sample_rate="16000" />
                 <param bit_width="16" />
                 <!-- Module output channels -->
                 <param out_channels="1" />
                 <!-- Uncomment param lpi_enable="false" to run usecase in NLPI by default -->
-                <!--param lpi_enable="false" /-->
+                <!--Param lpi_enable="false" /-->
                 <operating_modes>
                     <low_power capture_profile_handset="DUAL_MIC_16KHZ_16BIT_RAW_LPI" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI" />
                     <high_performance capture_profile_handset="DUAL_MIC_48KHZ_16BIT_FFECNS" capture_profile_headset="SINGLE_MIC_48KHZ_16BIT_HEADSET_FFECNS" />
@@ -2071,7 +2071,7 @@
                 <name>QC_HIST_CAP</name>
                 <param vendor_uuid="1b9cabd9-4eb9-4012-9766-2ce6597a9658" />
                 <param interface_plugin_lib="sva_plugin.so" />
-                <!-- batch size (in ms) for BATCHING buffer mode -->
+                <!-- Batch size (in ms) for BATCHING buffer mode -->
                 <param batch_size_in_ms="5000" />
                 <param capture_keyword="10000" /> <!-- Default history buffer length -->
                 <!-- Module output media format -->
@@ -2079,7 +2079,7 @@
                 <param bit_width="16" />
                 <param out_channels="1" />
                 <!-- NOTE: HIST_CAP usecase is typically running with ASR concurrency -->
-                <!-- supposed to use same capture profile as ASR due to shared dam and device pp -->
+                <!-- Supposed to use same capture profile as ASR due to shared dam and device pp -->
                 <operating_modes>
                     <low_power capture_profile_handset="SINGLE_MIC_16KHZ_16BIT_RAW_LPI_AAD" capture_profile_headset="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_LPI" />
                     <high_performance capture_profile_handset="DUAL_MIC_48KHZ_16BIT_FFECNS" capture_profile_headset="SINGLE_MIC_48KHZ_16BIT_HEADSET_FFECNS" />

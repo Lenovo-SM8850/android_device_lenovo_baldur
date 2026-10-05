@@ -318,7 +318,7 @@ vendor/lib64/libmmcamera_cac.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so;DISABLE_DEPS
 
-# device pinned
+# Device pinned
 vendor/lib64/com.qti.custom.settings.so
 vendor/lib64/com.qti.platformsettings.sm8850.so
 vendor/lib64/com.qti.qseeaon.so
@@ -398,7 +398,7 @@ vendor/lib64/libspcom.so
 vendor/lib64/libssd.so
 vendor/lib64/libsuidlookup.so
 
-# media SV DSP
+# Media SV DSP
 vendor/lib64/libsv.so
 
 # Media / Video
@@ -485,7 +485,7 @@ vendor/lib64/vendor.qti.ImsRtpService-aidl-Impl.so
 vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
 
-# panel calibration
+# Display calibration
 vendor/etc/cablconfig.xml
 vendor/etc/display/SVIConfig.xml
 vendor/etc/display/advanced_sf_offsets.xml
@@ -500,16 +500,16 @@ vendor/etc/displayconfig/display_id_4630947039571902850.xml
 vendor/etc/displayconfig/display_id_4630947039571902851.xml
 vendor/etc/displayconfig/display_id_4630947075271898515.xml
 
-# platform configuration
+# Platform configuration
 vendor/etc/backend_conf.xml
 vendor/etc/dcp_symbols/dcp.elf
 vendor/etc/qvirtmgr-vndr.json
 vendor/etc/yellochick_v1.pmd
 
-# platform init
+# Init
 vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc
 
-# platform runtime
+# Platform runtime
 vendor/bin/hw/vendor.lenovo.hardware.touchscreen-service
 vendor/bin/oemowninfo
 vendor/bin/profile_config_service.sh
@@ -558,7 +558,7 @@ vendor/lib64/libspukeymintutils.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/vendor.qti.hardware.qteeconnector-V1-ndk.so
 
-# sensor configuration
+# Sensors config
 vendor/etc/sensors/config/json.lst
 vendor/etc/sensors/config/kaanapali_aw963xx_0.json
 vendor/etc/sensors/config/kaanapali_aw963xx_0_sar_register.json
@@ -585,11 +585,11 @@ vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libsnsutils.so
 vendor/lib64/sensors.qsh.so
 
-# thermal engine
+# Thermal engine
 vendor/bin/thermal-engine-v2
 vendor/lib64/libthermalclient.so
 
-# thermal power tuning
+# Thermal power tuning
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/qapeboostsconfig.xml
@@ -613,6 +613,6 @@ vendor/etc/thermal-engine_cpu_3.conf
 vendor/etc/thermal-engine_cpu_4.conf
 vendor/etc/thermal_user_case.conf
 
-# touch firmware
+# Touchscreen firmware
 vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin

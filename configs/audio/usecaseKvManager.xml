@@ -502,7 +502,7 @@
                 <graph_kv key="0xA2000000" value="0xA2000006"/>
             </keys_and_values>
         </device>
-        <!-- wired USB Device-->
+        <!-- Wired USB Device-->
         <device id="PAL_DEVICE_OUT_WIRED_HEADSET,PAL_DEVICE_OUT_WIRED_HEADPHONE">
             <keys_and_values>
                 <!-- DEVICERX - HEADPHONES -->

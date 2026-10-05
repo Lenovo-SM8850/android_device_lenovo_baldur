@@ -63,7 +63,7 @@ PRODUCT_COPY_FILES += \
 
 # IMS
 # Without this feature ImsManager is null; SystemUI injects it non-null
-# through ImsRepository/WifiRepositoryImpl, including on Wi-Fi-only devices.
+# Through ImsRepository/WifiRepositoryImpl, including on Wi-Fi-only devices.
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.ims.xml
 
