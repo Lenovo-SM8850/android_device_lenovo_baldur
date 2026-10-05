@@ -55,18 +55,10 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libqcodec2_core.so': blob_fixup()
             .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     (
-        'vendor/etc/media_codecs_canoe_sku1_vendor.xml',
-        'vendor/etc/media_codecs_canoe_v2_vendor.xml',
-        'vendor/etc/media_codecs_performance_canoe_sku1_vendor.xml',
-        'vendor/etc/media_codecs_performance_canoe_sku2_vendor.xml',
-        'vendor/etc/media_codecs_performance_canoe_sku3.xml',
-        'vendor/etc/media_codecs_performance_canoe_sku3_vendor.xml',
-        'vendor/etc/media_codecs_performance_canoe_v1_vendor.xml',
-        'vendor/etc/media_codecs_performance_canoe_v2_vendor.xml',
+        'vendor/lib64/c2.dolby.hevc.dec.so',
+        'vendor/lib64/c2.dolby.hevc.sec.dec.so',
     ): blob_fixup()
-        .regex_replace('\\s*<MediaCodec\\b[^>]*(?:name="[^"]*(?:dolby|\\.dv\\.)[^"]*"|type="video/dolby-vision")[^>]*>[\\s\\S]*?</MediaCodec>', ''),
-    'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
-        .regex_replace('\\s*<fqname>IComponentStore/dolby</fqname>', ''),
+        .add_needed('libcodec2_shim.so'),
 }  # fmt: skip
 
 
