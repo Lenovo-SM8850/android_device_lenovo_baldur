@@ -9,6 +9,15 @@ LOCAL_PATH := device/lenovo/baldur
 PRODUCT_PACKAGES += \
     init.lenovo.baldur.rc
 
+# Pen
+PRODUCT_PACKAGES += \
+    LenovoPen \
+    LenovoPenResTarget \
+    init.baldur.pen.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/idc/NVTCapacitivePen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/NVTCapacitivePen.idc
+
 # Display
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
