@@ -34,13 +34,14 @@ ________________________________________________________________________________
                 <!--Vendor Properties -->
                 <!--UX Properties -->
                 <!--Gaming Properties (move to qape) -->
-                <Prop Name="ro.vendor.perf.enable.wlclite" Value="true" Target="canoe,alor_interposer,alor" />
+                <Prop Name="ro.vendor.perf.enable.wlclite" Value="false" Target="canoe,alor_interposer,alor" />
                 <Prop Name="ro.vendor.wlc.exit.timeout" Value="120000"/>
-                <Prop Name="ro.vendor.perf.lighteninglaunches_lite" Value="true" Target="canoe,alor_interposer,alor" />
-                <Prop Name="ro.vendor.perf.silkyscrolls_lite" Value="true" Target="canoe,alor_interposer,alor" />
+                <Prop Name="ro.vendor.perf.attach.hint.ll" Value="false" />
+                <Prop Name="ro.vendor.perf.lighteninglaunches_lite" Value="false" Target="canoe,alor_interposer,alor" />
+                <Prop Name="ro.vendor.perf.silkyscrolls_lite" Value="false" Target="canoe,alor_interposer,alor" />
 		<Prop Name="ro.vendor.perf.ll_default_app_base_time" Value="600" />
                 <Prop Name="ro.vendor.perf.ll_default_game_base_time" Value="600" />
-                <Prop Name="vendor.debug.enable.lm" Value="true" />
+                <Prop Name="vendor.debug.enable.lm" Value="false" />
                 <Prop Name="vendor.enable.prefetch" Value="false" />
                 <Prop Name="vendor.perf.fps_switch_hyst_time_secs" Value="10" />
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
@@ -55,7 +56,7 @@ ________________________________________________________________________________
                 <Prop Name="ro.vendor.perf.qape.max_boost_count" Value="3" />
                 <Prop Name="ro.vendor.perf.qape.max_pipeline_number" Value="3" />
                 <Prop Name="vendor.perf.bgt.enable" Value="true" />
-                <Prop Name="ro.vendor.perf.semiautopipeline" Value="true" Target="canoe,alor_interposer,alor" />
+                <Prop Name="ro.vendor.perf.semiautopipeline" Value="false" Target="canoe,alor_interposer,alor" />
                 <Prop Name="ro.vendor.perf.autopipeline" Value="false" Target="canoe,alor_interposer,alor" />
                 <Prop Name="vendor.perf.gre.enable" Value="false"  Target="canoe,alor_interposer,alor"  />
                 <Prop Name="vendor.qape.enable.target_fps" Value="true" Target="canoe,alor_interposer,alor" />
@@ -123,7 +124,7 @@ ________________________________________________________________________________
                 <Prop Name="ro.vendor.use_perf_hal_for_preferredapps" Value="true" />
                 <Prop Name="vendor.prefapps.pkg_retention_mins" Value="28800" />
                 <Prop Name="vendor.prefapps.last_launch_threshold" Value="21600" />
-                <Prop Name="vendor.debug.enable.memperfd"         Value="true"     />
+                <Prop Name="vendor.debug.enable.memperfd"         Value="false"     />
                 <Prop Name="vendor.enable.memperfd_MIN_RAM_in_KB" Value="1048576"  />
                 <Prop Name="vendor.enable.memperfd_MAX_RAM_in_KB" Value="15728640" />
 

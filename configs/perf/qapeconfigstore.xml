@@ -61,7 +61,7 @@ ________________________________________________________________________________
             <GFR_FLAG>1</GFR_FLAG>
         </Configs>
 
-        <Prop Name="vendor.qape.enable.engine" Value="true" Target="canoe,alor_interposer,alor"/>
+        <Prop Name="vendor.qape.enable.engine" Value="false" Target="canoe,alor_interposer,alor"/>
 
         <Configs Target="canoe,alor_interposer,alor" Package="DefaultGamePackage">
             <NumThreads_Def>0</NumThreads_Def>
