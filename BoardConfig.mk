@@ -20,3 +20,5 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 BOARD_AVB_BOOT_ROLLBACK_INDEX := 1749081600
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 1783209600
 
+# Include the proprietary files makefile.
+include vendor/lenovo/baldur/BoardConfigVendor.mk
