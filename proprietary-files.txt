@@ -16,7 +16,8 @@ vendor/lib64/rfs/dsp/libnspextensionsuperresolutionprovider.so
 vendor/lib64/rfs/dsp/libsvdsp.so
 vendor/lib64/rfs/dsp/libvpp_svc_skel.so
 
-# Audio effects
+# Dolby audio
+vendor/etc/dolby/dax-default.xml
 vendor/lib64/soundfx/libquasar.so
 
 # LED aw22xxx
@@ -85,6 +86,7 @@ vendor/lib64/libsession_voice.so
 vendor/lib64/libsession_voice_config.so
 vendor/lib64/libstream_compress.so
 vendor/lib64/libstream_pcm.so
+vendor/lib64/soundfx/libswdapaidl.so;DISABLE_DEPS
 
 # Camera
 vendor/bin/camera-preamble.json

@@ -58,7 +58,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/etc/media_codecs_performance_canoe_v1_vendor.xml',
         'vendor/etc/media_codecs_performance_canoe_v2_vendor.xml',
     ): blob_fixup()
-        .regex_replace('\\s*<Include href="media_codecs_dolby_audio\\.xml"\\s*/>', '')
         .regex_replace('\\s*<MediaCodec\\b[^>]*(?:name="[^"]*(?:dolby|\\.dv\\.)[^"]*"|type="video/dolby-vision")[^>]*>[\\s\\S]*?</MediaCodec>', ''),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('\\s*<fqname>IComponentStore/dolby</fqname>', ''),
