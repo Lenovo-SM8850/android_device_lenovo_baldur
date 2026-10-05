@@ -1,0 +1,30 @@
+# Camera
+ro.camera.enableCamera1MaxZsl=1
+ro.camerax.extensions.enabled=true
+
+# Device identity
+ro.vendor.config.lgsi.project=baldur
+
+# Display HAL / gralloc
+ro.vendor.display.cabl=2
+ro.vendor.display.paneltype=1
+vendor.display.cabl.config=1
+vendor.display.cabl.config_path=/vendor/etc/cablconfig.xml
+ro.vendor.display.svi=1
+ro.vendor.display.sensortype=2
+vendor.display.svi.config=1
+vendor.display.svi.config_path=/vendor/etc/display/SVIConfig.xml
+vendor.display.use_smooth_motion=0
+
+# Security / DRM / TEE
+vendor.wv.oemcrypto.debug.enable_prov40=true
+
+# Performance / power / sensors / daemons
+persist.vendor.qfp=true
+
+# Additional hardware properties
+vendor.display.lcd_density=440
+vendor.display.svi_threshold_nits=500
+
+# Display color mode
+persist.sys.sf.native_mode=257
