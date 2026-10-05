@@ -43,6 +43,11 @@ PRODUCT_PACKAGES += ueventd.baldur.rc
 PRODUCT_PACKAGES += \
     init.baldur.rc
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayBaldur \
+    FrameworksResTargetBaldur
+
 # Pen
 PRODUCT_PACKAGES += \
     init.baldur.pen.rc
