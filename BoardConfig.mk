@@ -14,6 +14,9 @@ TARGET_OTA_ASSERT_DEVICE := baldur,TB323FU
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Kernel
+BOOT_KERNEL_MODULES += mbhc_dlkm.ko
+
 # Recovery
 TARGET_RECOVERY_UI_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/brightness
 TARGET_RECOVERY_UI_MAX_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/max_brightness
