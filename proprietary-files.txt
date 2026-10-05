@@ -529,9 +529,22 @@ vendor/lib64/libofestriping.so
 vendor/lib64/libois_channel_stub.so
 vendor/lib64/libproj_qmot_tracker.so
 vendor/lib64/libproj_sot.so
-vendor/lib64/libqfdadapter.so
 vendor/lib64/libqll.so
 vendor/lib64/libqllengine.so
 vendor/lib64/libqsegnet.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libubifocus.so
+
+# Dolby audio
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
+vendor/lib64/libqfdadapter.so|1fc355bf980a94a7aff4bc1da19475649fa30c07
+vendor/etc/dolby/dax-default.xml
+vendor/lib64/soundfx/libswdapaidl.so;DISABLE_DEPS
+vendor/lib64/c2.dolby.client.so
+vendor/lib64/c2.dolby.hevc.dec.so;DISABLE_CHECKELF
+vendor/lib64/c2.dolby.hevc.sec.dec.so;DISABLE_CHECKELF
+vendor/lib64/c2.dolby.store.so
+vendor/lib64/libdolbydecoderprocessor.so
+vendor/lib64/libdolbyeglcore.so
+vendor/lib64/libdolbyottcameracontrol.so
+vendor/lib64/libdolbyproxyandroid.so
