@@ -99,4 +99,7 @@
 
     <!-- LCD panel: light theme by default -->
     <integer name="config_defaultNightMode">1</integer>
+
+    <!-- Evolution X -->
+    <string name="config_stockFingerprint" translatable="false">Lenovo/TB323FU_PRC/TB323FU:16/BQ2A.250831.001/ZUXOS_2.0.12.088_260610_PRC:user/release-keys</string>
 </resources>
