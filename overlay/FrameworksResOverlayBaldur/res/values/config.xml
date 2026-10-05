@@ -91,4 +91,5 @@
 
 
     <!-- LCD panel: light theme by default -->
+    <integer name="config_defaultNightMode">1</integer>
 </resources>
