@@ -20,10 +20,15 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
+vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so
+vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so
 vendor/lib64/rfs/dsp/libnsp_ipc_cdsp_skel.so
 vendor/lib64/rfs/dsp/libnspextensioncopyprovider.so
+vendor/lib64/rfs/dsp/libnspextensionfrcprovider.so
 vendor/lib64/rfs/dsp/libnspextensionsuperresolutionprovider.so
 vendor/lib64/rfs/dsp/libsvdsp.so
+vendor/lib64/rfs/dsp/libvpp_frc.so
+vendor/lib64/rfs/dsp/libvpp_gfrc_networks.so
 vendor/lib64/rfs/dsp/libvpp_svc_skel.so
 
 # Audio effects
@@ -368,11 +373,6 @@ vendor/lib64/libsv.so
 # From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/init.qti.media.sh
 vendor/bin/vppservice
-vendor/etc/media_canoe_sku1/video_system_specs.json
-vendor/etc/media_canoe_sku2/video_system_specs.json
-vendor/etc/media_canoe_sku3/video_system_specs.json
-vendor/etc/media_canoe_v1/video_system_specs.json
-vendor/etc/media_canoe_v2/video_system_specs.json
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_canoe_sku1.xml
 vendor/etc/media_codecs_canoe_sku1_vendor.xml
