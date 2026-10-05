@@ -16,6 +16,10 @@ LENOVO_DEVICE_CONFIG_PATH := device/lenovo/baldur
 # Display
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Hardware configuration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/displayconfig/display_id_4630946916234099603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946916234099603.xml
+
 # IMS
 # SystemUI requires IMS discovery on Wi-Fi-only devices.
 PRODUCT_COPY_FILES += \
