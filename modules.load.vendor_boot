@@ -1,3 +1,4 @@
+# Source-kernel load list.
 gh_arm_drv.ko
 qti-regmap-debugfs.ko
 cambistmclkcc-canoe.ko
@@ -20,10 +21,8 @@ msm_gpi.ko
 qcom_dma_heaps.ko
 deferred-free-helper.ko
 qcom_scmi_vendor.ko
-mem_object.ko
 si_core_module.ko
 qcom-scm.ko
-qcom_tzmem.ko
 qcom_hwspinlock.ko
 i2c-msm-geni.ko
 icc-clk.ko
@@ -109,3 +108,12 @@ qcom_ipc_logging.ko
 qrtr.ko
 smcinvoke_dlkm.ko
 smcinvoke_dlkm.ko
+qcom_dynamic_ramoops.ko
+qti_pmic_glink.ko
+qti_battery_charger.ko
+ucsi_qti_glink.ko
+repeater.ko
+hq_ptn3222_repeater.ko
+redriver.ko
+phy-msm-m31-eusb2.ko
+dwc3-msm.ko

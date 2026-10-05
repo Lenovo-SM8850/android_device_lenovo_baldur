@@ -1,0 +1,19 @@
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Device fstab.
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
+    vendor: true,
+}
+
+// Preserve /first_stage_ramdisk/fstab.qcom in the dedicated vendor ramdisk.
+prebuilt_first_stage_ramdisk {
+    name: "fstab.qcom.vendor_ramdisk",
+    filename: "fstab.qcom",
+    src: "etc/fstab.qcom",
+    vendor_ramdisk: true,
+    install_in_root: true,
+}
