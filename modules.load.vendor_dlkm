@@ -1,3 +1,4 @@
+# Source-kernel load list.
 zram.ko
 mhi_dev_satellite.ko
 mhi_dev_uci.ko
@@ -51,13 +52,10 @@ leds-aw22xxx.ko
 ledtrig-pattern.ko
 leds-qpnp-vibrator-ldo.ko
 qcom-i2c-pmic.ko
-extend_reclaim.ko
 hq_ptn3222_repeater.ko
 haptic.ko
 nvt_36xxx.ko
-hqsysfs.ko
 lenovo_sys_temp.ko
-lenovo_thermal_control.ko
 nvmem_qfprom.ko
 pci-msm-drv.ko
 eom_driver.ko
@@ -185,13 +183,11 @@ redriver.ko
 repeater.ko
 repeater-qti-pmic-eusb2.ko
 ucsi_qti_glink.ko
-lenovo_kallsyms.ko
 gh_ctrl.ko
 gh_irq_lend.ko
 gh_panic_notifier.ko
 gh_rm_booster.ko
 gunyah_trace.ko
-lenovohypersched.ko
 msm_sysstats.ko
 zsmalloc.ko
 mac80211.ko
@@ -359,7 +355,6 @@ rmnet_sch.ko
 rmnet_wlan.ko
 msm_drm.ko
 frpc-adsprpc.ko
-stm_st54se_gpio.ko
 msm-eva.ko
 qbt_handler.ko
 msm_ext_display.ko
@@ -367,9 +362,7 @@ sync_fence.ko
 msm_hw_fence.ko
 msm_hfi_core.ko
 msm-mmrm.ko
-stm_nfc_i2c.ko
 nxp-nci.ko
-rkp_md5.ko
 qcedev-mod_dlkm.ko
 qcrypto-msm_dlkm.ko
 qce50_dlkm.ko
@@ -551,7 +544,6 @@ rmnet_sch.ko
 rmnet_wlan.ko
 msm_drm.ko
 frpc-adsprpc.ko
-stm_st54se_gpio.ko
 msm-eva.ko
 qbt_handler.ko
 msm_ext_display.ko
@@ -559,9 +551,7 @@ sync_fence.ko
 msm_hw_fence.ko
 msm_hfi_core.ko
 msm-mmrm.ko
-stm_nfc_i2c.ko
 nxp-nci.ko
-rkp_md5.ko
 qcedev-mod_dlkm.ko
 qcrypto-msm_dlkm.ko
 qce50_dlkm.ko
