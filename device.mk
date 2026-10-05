@@ -82,6 +82,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Media
+# These copies must precede the inherits to override the vendor specs.
+_baldur_video_spec_variants := canoe_sku1 canoe_sku2 canoe_sku3 canoe_v1 canoe_v2
+PRODUCT_COPY_FILES += $(foreach variant,$(_baldur_video_spec_variants), \
+    $(LOCAL_PATH)/configs/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_$(variant)/video_system_specs.json)
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/lenovo/sm8850-common/common.mk)
 
