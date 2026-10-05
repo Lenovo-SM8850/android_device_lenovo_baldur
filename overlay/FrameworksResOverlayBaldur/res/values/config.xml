@@ -3,6 +3,10 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <bool name="config_intrusiveNotificationLed">true</bool>
+    <integer name="config_defaultNotificationLedOn">500</integer>
+    <integer name="config_defaultNotificationLedOff">2000</integer>
+
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>8</item>
         <item>8</item>
