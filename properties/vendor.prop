@@ -1,1 +1,27 @@
+# Camera
+ro.camerax.extensions.enabled=true
+
+# Device identity
 ro.vendor.config.lgsi.project=baldur
+
+# Display
+ro.vendor.display.cabl=2
+ro.vendor.display.paneltype=1
+ro.vendor.display.sensortype=2
+ro.vendor.display.svi=1
+vendor.display.cabl.config=1
+vendor.display.cabl.config_path=/vendor/etc/cablconfig.xml
+vendor.display.lcd_density=440
+vendor.display.svi.config=1
+vendor.display.svi.config_path=/vendor/etc/display/SVIConfig.xml
+vendor.display.svi_threshold_nits=500
+vendor.display.use_smooth_motion=0
+
+# DRM
+vendor.wv.oemcrypto.debug.enable_prov40=true
+
+# Fingerprint
+persist.vendor.qfp=true
+
+# SurfaceFlinger
+persist.sys.sf.native_mode=257
