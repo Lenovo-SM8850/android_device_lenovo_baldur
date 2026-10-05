@@ -548,3 +548,10 @@ vendor/lib64/libdolbydecoderprocessor.so
 vendor/lib64/libdolbyeglcore.so
 vendor/lib64/libdolbyottcameracontrol.so
 vendor/lib64/libdolbyproxyandroid.so
+
+# Dolby Vision
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
+vendor/bin/hw/dvs-aidl-service
+vendor/bin/hw/vendor.dolby.media.c2-service-vision
+vendor/etc/init/vendor.dolby.media.c2-service-vision.rc
+vendor/etc/dolby_vision.cfg
