@@ -23,7 +23,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.lenovo
+    android.hardware.light-service.lenovo \
+    LenovoLegionHalo
 
 # Hardware configuration
 PRODUCT_COPY_FILES += \
