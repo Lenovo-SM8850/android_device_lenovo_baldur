@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <bool name="config_show_smooth_display">true</bool>
+    <bool name="config_show_battery_cycle_count">true</bool>
+    <!-- Standard/Vibrant labels correspond to the values 0/257 below. -->
+    <string-array name="config_color_mode_options_strings" translatable="false">
+        <item>@string/color_mode_option_standard_canoe</item>
+        <item>@string/color_mode_option_vibrant_canoe</item>
+    </string-array>
+    <integer-array name="config_color_mode_options_values" translatable="false">
+        <item>0</item>
+        <item>257</item>
+    </integer-array>
+</resources>
