@@ -9,7 +9,6 @@ DEVICE_PATH := device/lenovo/baldur
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
 
-
 # Kernel
 TARGET_KERNEL_SOURCE := vendor/lenovo/sm8850
 TARGET_KERNEL_PLATFORM_TARGET := canoe_perf
@@ -56,6 +55,9 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 # Verified Boot
 BOARD_AVB_BOOT_ROLLBACK_INDEX := 1749081600
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 1783209600
+
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/lights/framework_matrix.xml
 
 # Include the proprietary files makefile.
 include vendor/lenovo/baldur/BoardConfigVendor.mk
