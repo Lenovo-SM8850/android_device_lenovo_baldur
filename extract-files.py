@@ -67,8 +67,10 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/etc/media_codecs_performance_canoe_v1_vendor.xml',
         'vendor/etc/media_codecs_performance_canoe_v2_vendor.xml',
     ): blob_fixup()
-        .regex_replace('\\s*<Include href="media_codecs_dolby_audio\\.xml"\\s*/>', '')
         .regex_replace('\\s*<MediaCodec\\b[^>]*(?:name="[^"]*(?:dolby|\\.dv\\.)[^"]*"|type="video/dolby-vision")[^>]*>[\\s\\S]*?</MediaCodec>', ''),
+    'vendor/lib64/soundfx/libswgamedapaidl.so': blob_fixup()
+        .replace_needed('android.hardware.audio.effect-V3-ndk.so', 'android.hardware.audio.effect-V4-ndk.so')
+        .replace_needed('android.media.audio.common.types-V4-ndk.so', 'android.media.audio.common.types-V5-ndk.so'),
     'vendor/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini': blob_fixup()
         .call(enable_ull_scan_requests, need_tmp_dir=False),
     'vendor/bin/init.qti.kernel.early_debug.sh': blob_fixup()
