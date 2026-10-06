@@ -350,22 +350,18 @@ vendor/lib64/libadreno_compiler_cl.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libarcsoft_video_superportrait.so;DISABLE_CHECKELF
 vendor/lib64/libbitmlenginev2.so
-vendor/lib64/libclstc_tm.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libdpps.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
 vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libfeutils.so
-vendor/lib64/libhdr_als_adapter.so
-vendor/lib64/libhdr_tm.so
 vendor/lib64/libhwliqinterface2.so
 vendor/lib64/libhwlispcffdump.so
 vendor/lib64/libisphwsetting.so
@@ -386,17 +382,14 @@ vendor/lib64/libqfdservice.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqtigefar.so;DISABLE_DEPS
 vendor/lib64/librpmb.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdmextension.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsensinghubapi-prop.so
 vendor/lib64/libshsc.so
 vendor/lib64/libsiminputgenutil.so
-vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libspcom.so
 vendor/lib64/libssd.so
 vendor/lib64/libsuidlookup.so
+
 
 # Media SV DSP
 vendor/lib64/libsv.so
