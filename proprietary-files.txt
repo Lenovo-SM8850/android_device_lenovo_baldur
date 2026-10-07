@@ -5,6 +5,10 @@
 # From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/lib/rfsa/adsp/capi_dofg_nn.so.1
 vendor/lib/rfsa/adsp/libmlawbpostproc_dsp_skel.so
+vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so
+vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so
+vendor/lib64/rfs/dsp/libvpp_frc.so
+vendor/lib64/rfs/dsp/libvpp_gfrc_networks.so
 
 # Audio effects
 # From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
@@ -129,6 +133,7 @@ vendor/lib64/camera/components/com.qti.node.evadepth.so
 vendor/lib64/camera/components/com.qti.node.evaitof.so
 vendor/lib64/camera/components/com.qti.node.evawarp.so
 vendor/lib64/camera/components/com.qti.node.fd.so
+vendor/lib64/camera/components/com.qti.node.frc.so
 vendor/lib64/camera/components/com.qti.node.gme.so
 vendor/lib64/camera/components/com.qti.node.gpu.so
 vendor/lib64/camera/components/com.qti.node.gyrornn.so
@@ -185,6 +190,7 @@ vendor/lib64/com.qti.feature2.afbrckt.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
 vendor/lib64/com.qti.feature2.derivedoffline.so
+vendor/lib64/com.qti.feature2.frc.so
 vendor/lib64/com.qti.feature2.fusion.so
 vendor/lib64/com.qti.feature2.generic.so
 vendor/lib64/com.qti.feature2.gs.sm8850.so
@@ -231,6 +237,7 @@ vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxsettingsmanager.so
 vendor/lib64/libcamxswispiqmodule.so
 vendor/lib64/libcamxswlipedriver.so
+vendor/lib64/libcamxvppservicebase.so
 vendor/lib64/libchicore.so
 vendor/lib64/libchifeature2.so
 vendor/lib64/libchinodeevautils.so
@@ -259,22 +266,6 @@ vendor/lib64/libssd.so
 # From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/init.qcom.cabl.off.sh
 vendor/bin/init.qcom.cabl.sh
-
-# Face unlock
-# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
-vendor/bin/hw/android.hardware.biometrics.face@4.0-service.face
-vendor/firmware/arcface_ta.b00
-vendor/firmware/arcface_ta.b01
-vendor/firmware/arcface_ta.b03
-vendor/firmware/arcface_ta.b04
-vendor/firmware/arcface_ta.b05
-vendor/firmware/arcface_ta.b06
-vendor/firmware/arcface_ta.b07
-vendor/firmware/arcface_ta.b08
-vendor/firmware/arcface_ta.mdt
-vendor/lib64/libarcsoft_face_biometric.so
-vendor/lib64/libarcsoft_faceid.so
-vendor/lib64/libfaceid_ca_proxy.arcsoft.so
 
 # Media / Video
 # From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
@@ -500,11 +491,6 @@ vendor/lib64/libqshcamera.so
 vendor/lib64/com.qualcomm.mcx.distortionmapper.so
 vendor/lib64/libhdr10plus.so
 
-# Face unlock
-# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
-vendor/lib64/libarcsoft_face_mink.so
-vendor/lib64/libbiometricsface_ca.arcsoft.so
-
 # Platform runtime
 # From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/lib64/libaidenoiser.so
@@ -521,17 +507,21 @@ vendor/lib64/libofestriping.so
 vendor/lib64/libois_channel_stub.so
 vendor/lib64/libproj_qmot_tracker.so
 vendor/lib64/libproj_sot.so
+vendor/lib64/libqfdadapter.so
 vendor/lib64/libqll.so
 vendor/lib64/libqllengine.so
 vendor/lib64/libqsegnet.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libubifocus.so
 
-# Dolby audio
-# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
-vendor/lib64/libqfdadapter.so|1fc355bf980a94a7aff4bc1da19475649fa30c07
+# Evolution X
 vendor/etc/dolby/dax-default.xml
 vendor/lib64/soundfx/libswdapaidl.so;DISABLE_DEPS
+
+# Evolution X
+vendor/bin/hw/dvs-aidl-service
+vendor/bin/hw/vendor.dolby.media.c2-service-vision
+vendor/etc/init/vendor.dolby.media.c2-service-vision.rc
 vendor/lib64/c2.dolby.client.so
 vendor/lib64/c2.dolby.hevc.dec.so;DISABLE_CHECKELF
 vendor/lib64/c2.dolby.hevc.sec.dec.so;DISABLE_CHECKELF
@@ -540,20 +530,4 @@ vendor/lib64/libdolbydecoderprocessor.so
 vendor/lib64/libdolbyeglcore.so
 vendor/lib64/libdolbyottcameracontrol.so
 vendor/lib64/libdolbyproxyandroid.so
-
-# Dolby Vision
-# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
-vendor/bin/hw/dvs-aidl-service
-vendor/bin/hw/vendor.dolby.media.c2-service-vision
-vendor/etc/init/vendor.dolby.media.c2-service-vision.rc
 vendor/etc/dolby_vision.cfg
-
-# Video processing
-# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
-vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so
-vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so
-vendor/lib64/rfs/dsp/libvpp_frc.so
-vendor/lib64/rfs/dsp/libvpp_gfrc_networks.so
-vendor/lib64/camera/components/com.qti.node.frc.so
-vendor/lib64/com.qti.feature2.frc.so
-vendor/lib64/libcamxvppservicebase.so
