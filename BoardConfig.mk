@@ -45,7 +45,7 @@ BOARD_AVB_BOOT_ROLLBACK_INDEX := 1749081600
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 1783209600
 
 # VINTF
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/lights/framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(COMMON_PATH)/configs/lights/framework_matrix.xml
 
 # Include the proprietary files makefile.
 include vendor/lenovo/baldur/BoardConfigVendor.mk

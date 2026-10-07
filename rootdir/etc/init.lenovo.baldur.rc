@@ -36,14 +36,6 @@ import /vendor/etc/init/hw/init.lenovo.common.rc
 on early-init
     export MEMTAG_OPTIONS off
 
-on post-fs-data
-
-    # Rear RGB ring
-    chown system system /sys/class/leds/aw22xxx_led/reg
-    chmod 0660 /sys/class/leds/aw22xxx_led/reg
-    chown system system /sys/class/leds/aw22xxx_led/effect
-    chmod 0660 /sys/class/leds/aw22xxx_led/effect
-
 on boot
 
     chown system /sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/trusted_touch_enable
