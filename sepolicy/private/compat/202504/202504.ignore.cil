@@ -3,5 +3,4 @@
 (typeattribute new_objects)
 (typeattributeset new_objects
   ( new_objects
-    lenovo_pen_type_prop
-    hal_lightring_service))
+    lenovo_pen_type_prop))
