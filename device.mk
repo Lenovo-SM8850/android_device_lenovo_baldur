@@ -77,10 +77,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Vendor DLKM
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/modules.blocklist.system_dlkm:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
-
 # Touch
 PRODUCT_PACKAGES += \
     LineageParts \

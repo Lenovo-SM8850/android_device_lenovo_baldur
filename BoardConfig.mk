@@ -14,20 +14,10 @@ TARGET_KERNEL_SOURCE := vendor/lenovo/sm8850
 TARGET_KERNEL_PLATFORM_TARGET := canoe_perf
 TARGET_KERNEL_UNSAFE_DDK_HEADERS := true
 TARGET_KERNEL_MIXED_MODE := true
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
 # DTB / DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_DTB_LIST_WILDCARD := baldur-canoe-base
-
-# Vendor boot
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell sed '/^\#/d' $(DEVICE_PATH)/modules.load.vendor_boot))
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell sed '/^\#/d' $(DEVICE_PATH)/modules.load.recovery))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist.vendor_boot
-
-# Vendor DLKM
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell sed '/^\#/d' $(DEVICE_PATH)/modules.load.vendor_dlkm))
-BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist.vendor_dlkm
 
 # Recovery modules
 BOOT_KERNEL_MODULES := $(sort $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) \
@@ -35,7 +25,6 @@ BOOT_KERNEL_MODULES := $(sort $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOA
     hdcp_qseecom_dlkm.ko libarc4.ko mac80211.ko rfkill.ko smmu_proxy_dlkm.ko \
     tmecom-intf_dlkm.ko tz_log_dlkm.ko wcd_usbss_i2c.ko qts.ko)
 RECOVERY_KERNEL_MODULES := $(BOOT_KERNEL_MODULES)
-BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
 
 # Display
 TARGET_SCREEN_DENSITY := 440
