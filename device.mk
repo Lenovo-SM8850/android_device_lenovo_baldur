@@ -85,11 +85,6 @@ $(call soong_config_set,lenovopower,gesture_enable,1)
 $(call soong_config_set,lenovopower,gesture_disable,0)
 $(call inherit-product, hardware/lenovo/touch/touch.mk)
 
-# Board display, cover and touch resources
-PRODUCT_PACKAGES += \
-    FrameworksResOverlayCanoe \
-    SettingsOverlayCanoe
-
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/lenovo/sm8850-common/common.mk)
 
