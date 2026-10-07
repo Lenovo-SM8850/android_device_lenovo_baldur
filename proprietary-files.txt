@@ -351,19 +351,6 @@ vendor/bin/init.qcom.cabl.sh
 
 # Face unlock
 # From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
-vendor/bin/hw/android.hardware.biometrics.face@4.0-service.face
-vendor/firmware/arcface_ta.b00
-vendor/firmware/arcface_ta.b01
-vendor/firmware/arcface_ta.b03
-vendor/firmware/arcface_ta.b04
-vendor/firmware/arcface_ta.b05
-vendor/firmware/arcface_ta.b06
-vendor/firmware/arcface_ta.b07
-vendor/firmware/arcface_ta.b08
-vendor/firmware/arcface_ta.mdt
-vendor/lib64/libarcsoft_face_biometric.so
-vendor/lib64/libarcsoft_faceid.so
-vendor/lib64/libfaceid_ca_proxy.arcsoft.so
 
 # Media SV DSP
 # From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
@@ -682,8 +669,6 @@ vendor/lib64/libsnapdragoncolor-qdcm.so
 
 # Face unlock
 # From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
-vendor/lib64/libarcsoft_face_mink.so
-vendor/lib64/libbiometricsface_ca.arcsoft.so
 
 # Media / Video
 # From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
