@@ -413,21 +413,6 @@ vendor/lib64/libspcom.so
 vendor/lib64/libssd.so
 vendor/lib64/libsuidlookup.so
 
-# Face unlock
-vendor/bin/hw/android.hardware.biometrics.face@4.0-service.face
-vendor/firmware/arcface_ta.b00
-vendor/firmware/arcface_ta.b01
-vendor/firmware/arcface_ta.b03
-vendor/firmware/arcface_ta.b04
-vendor/firmware/arcface_ta.b05
-vendor/firmware/arcface_ta.b06
-vendor/firmware/arcface_ta.b07
-vendor/firmware/arcface_ta.b08
-vendor/firmware/arcface_ta.mdt
-vendor/lib64/libarcsoft_face_biometric.so
-vendor/lib64/libarcsoft_faceid.so
-vendor/lib64/libfaceid_ca_proxy.arcsoft.so
-
 # Media SV DSP
 vendor/lib64/libsv.so
 
