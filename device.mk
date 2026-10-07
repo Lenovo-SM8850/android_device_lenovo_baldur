@@ -11,7 +11,6 @@ PRODUCT_PACKAGES += \
 
 # Pen
 PRODUCT_PACKAGES += \
-    LenovoPen \
     LenovoPenResTarget \
     init.baldur.pen.rc
 
@@ -76,12 +75,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Touch
-PRODUCT_PACKAGES += \
-    LineageParts \
-    LenovoTouchscreenRotation \
-    init.lenovo.touch.rc \
-    vendor.lineage.touch-service.lenovo
-
 $(call soong_config_set_bool,lenovotouch,high_touch_polling_rate,true)
 $(call soong_config_set,lenovotouch,high_report_rate_node,/proc/HighReportRate)
 $(call soong_config_set,lenovotouch,high_report_rate_enable,1)
@@ -91,9 +84,6 @@ $(call soong_config_set,lenovopower,gesture_node,/proc/gesture_mode)
 $(call soong_config_set,lenovopower,gesture_enable,1)
 $(call soong_config_set,lenovopower,gesture_disable,0)
 $(call inherit-product, hardware/lenovo/touch/touch.mk)
-
-# Cover
-PRODUCT_PACKAGES += lenovo-cover
 
 # Board display, cover and touch resources
 PRODUCT_PACKAGES += \
