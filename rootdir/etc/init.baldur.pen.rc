@@ -5,8 +5,10 @@
 # NVT replays these settings after firmware reload and resume.
 on post-fs-data
     write /proc/pen_type 2
+    write /proc/support_pen 1
     write /proc/pen_wakeup_mode 1
 
 # LenovoPen selects only identities supported by the device overlay.
 on property:sys.lenovo.pen.type=2
     write /proc/pen_type 2
+    write /proc/support_pen 1
