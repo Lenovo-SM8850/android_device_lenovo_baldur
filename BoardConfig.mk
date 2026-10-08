@@ -6,6 +6,7 @@
 # Paths
 DEVICE_PATH := device/lenovo/baldur
 
+
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
 
@@ -28,6 +29,11 @@ RECOVERY_KERNEL_MODULES := $(BOOT_KERNEL_MODULES)
 
 # Display
 TARGET_SCREEN_DENSITY := 440
+
+# Recovery
+TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
+TARGET_RECOVERY_UI_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/brightness
+TARGET_RECOVERY_UI_MAX_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/max_brightness
 
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
