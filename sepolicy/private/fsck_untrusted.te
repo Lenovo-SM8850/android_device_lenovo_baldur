@@ -1,0 +1,2 @@
+# libblkid enumerates the removable card partition in sysfs.
+allow fsck_untrusted sysfs_devices_block:dir r_dir_perms;
