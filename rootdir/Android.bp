@@ -6,6 +6,7 @@
 
 prebuilt_etc {
     name: "init.lenovo.baldur.rc",
+    required: ["init.lenovo.common.rc"],
     src: "etc/init.lenovo.baldur.rc",
     sub_dir: "init/hw",
     vendor: true,
