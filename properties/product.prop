@@ -1,2 +1,7 @@
+# Attestation identity
+ro.product.device_for_attestation=TB323FU
+ro.product.model_for_attestation=TB323FU
+ro.product.name_for_attestation=TB323FU
+
 # Device name
 ro.product.marketname=Lenovo Legion Tab (8.8",5)
