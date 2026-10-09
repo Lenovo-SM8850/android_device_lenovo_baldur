@@ -99,6 +99,4 @@
 
     <!-- LCD panel: light theme by default -->
     <integer name="config_defaultNightMode">1</integer>
-
-    <bool name="config_supportDoubleTapWake">true</bool>
 </resources>

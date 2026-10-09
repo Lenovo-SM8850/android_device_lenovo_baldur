@@ -74,17 +74,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Touch
-$(call soong_config_set_bool,lenovotouch,high_touch_polling_rate,true)
-$(call soong_config_set,lenovotouch,high_report_rate_node,/proc/HighReportRate)
-$(call soong_config_set,lenovotouch,high_report_rate_enable,1)
-$(call soong_config_set,lenovotouch,high_report_rate_disable,0)
-$(call soong_config_set_bool,lenovopower,double_tap_to_wake,true)
-$(call soong_config_set,lenovopower,gesture_node,/proc/gesture_mode)
-$(call soong_config_set,lenovopower,gesture_enable,1)
-$(call soong_config_set,lenovopower,gesture_disable,0)
-$(call inherit-product, hardware/lenovo/touch/touch.mk)
-
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/lenovo/sm8850-common/common.mk)
 
