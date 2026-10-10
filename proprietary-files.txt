@@ -3,21 +3,14 @@
 
 # Display
 # From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
-vendor/lib64/libclstc_tm.so
-# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
-vendor/lib64/libdpps.so
-# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
-vendor/lib64/libhdr_als_adapter.so
-# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
-vendor/lib64/libhdr_tm.so
-# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
-vendor/lib64/libsdm-color.so
-# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
-vendor/lib64/libsdm-colormgr-algo.so
-# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
-vendor/lib64/libsdmextension.so
-# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
-vendor/lib64/libsnapdragoncolor-manager.so
+vendor/lib64/libclstc_tm.so|d2173e2aaa3b56631041fc9e00682d580b992c69
+vendor/lib64/libdpps.so|179f96b1d606f6421d8ee4030ab632c332189492
+vendor/lib64/libhdr_als_adapter.so|691f3b8b57591ece620d854ba5abea1e57867bda
+vendor/lib64/libhdr_tm.so|680a056985cddce4c3a341cdfb601246292fab84
+vendor/lib64/libsdm-color.so|e64fd8d05bcd578e17e552cf581d7c0ba96e51bb
+vendor/lib64/libsdm-colormgr-algo.so|a6123541a0ac493473aa7a69c1a96dc6831146ae
+vendor/lib64/libsdmextension.so|f63a76761e2a71adfc57893a27c2ca0edf694080
+vendor/lib64/libsnapdragoncolor-manager.so|de515fe3ad4fb6def06ba06c3fe19e58784e1723
 
 # DSP / FastRPC
 vendor/bin/adsprpcd
@@ -336,7 +329,7 @@ vendor/lib64/libmmcamera_cac.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so;DISABLE_DEPS
 
-# Device pinned
+# Camera tuning
 vendor/lib64/com.qti.custom.settings.so
 vendor/lib64/com.qti.platformsettings.sm8850.so
 vendor/lib64/com.qti.qseeaon.so
