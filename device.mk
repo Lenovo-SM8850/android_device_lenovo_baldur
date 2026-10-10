@@ -73,6 +73,11 @@ PRODUCT_PACKAGES += \
 # Recovery
 $(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
 
+# NVT loads its runtime firmware after panel reset, including in recovery.
+# Use the kernel's direct search path without depending on ueventd fallback.
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/baldur/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_fw.bin
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
