@@ -4,7 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-import os
 from functools import partial
 from pathlib import Path
 
@@ -85,8 +84,11 @@ for proprietary_file in module.proprietary_files:
 
 
 if __name__ == '__main__':
-    os.environ['LENOVO_ACTIVE_DEVICE'] = 'baldur'
-    utils = ExtractUtils.device_with_common(
-        module, 'sm8850-common', module.vendor
-    )
+    common = ExtractUtils.get_module('sm8850-common', module.vendor)
+    # Common consumers resolve the selected device's private ABI explicitly.
+    common.namespace_imports = [
+        f'vendor/lenovo/{module.device}',
+        *common.namespace_imports,
+    ]
+    utils = ExtractUtils(module, [common])
     utils.run()
