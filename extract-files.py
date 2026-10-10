@@ -4,7 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-from functools import partial
 from pathlib import Path
 
 from extract_utils.fixups_blob import (
@@ -26,7 +25,6 @@ helpers = import_module(
     'lenovo_extract_helpers',
     str((Path(__file__).resolve().parent.parent / 'sm8850-common') / 'extract_helpers.py'),
 )
-write_elf_data_modules = helpers.write_elf_data_modules
 
 namespace_imports = [
     'device/lenovo/baldur',
@@ -71,16 +69,6 @@ module = ExtractUtilsModule(
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
-
-
-# ELF data modules
-for proprietary_file in module.proprietary_files:
-    proprietary_file.add_pre_makefile_generation_fn(
-        partial(
-            write_elf_data_modules, proprietary_file,
-            device=module.device, owner=module.vendor,
-        )
-    )
 
 
 if __name__ == '__main__':
