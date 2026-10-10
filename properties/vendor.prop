@@ -1,5 +1,4 @@
 # Camera
-ro.camera.disableJpegR=true
 ro.camera.enableCamera1MaxZsl=1
 ro.camerax.extensions.enabled=true
 
