@@ -20,9 +20,6 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Health
-LENOVO_HEALTH_SERVICE := android.hardware.health-service.lenovo
-
 # Hardware configuration
 PRODUCT_COPY_FILES += \
     device/lenovo/baldur/configs/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_module_config_primary.xml \
