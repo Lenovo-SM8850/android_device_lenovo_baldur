@@ -1,6 +1,24 @@
 # All blobs are from TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610 unless otherwise noted.
 # Per-file exceptions are identified by a preceding "From <release>" comment.
 
+# Display
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
+vendor/lib64/libclstc_tm.so
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
+vendor/lib64/libdpps.so
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
+vendor/lib64/libhdr_als_adapter.so
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
+vendor/lib64/libhdr_tm.so
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
+vendor/lib64/libsdm-color.so
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
+vendor/lib64/libsdm-colormgr-algo.so
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
+vendor/lib64/libsdmextension.so
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
+vendor/lib64/libsnapdragoncolor-manager.so
+
 # DSP / FastRPC
 vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
