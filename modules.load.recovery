@@ -162,6 +162,7 @@ qcom-i2c-pmic.ko
 hq_ptn3222_repeater.ko
 haptic.ko
 nvt_36xxx.ko
+hqsysfs.ko
 lenovo_sys_temp.ko
 nvmem_qfprom.ko
 pci-msm-drv.ko
