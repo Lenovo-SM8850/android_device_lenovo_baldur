@@ -5,4 +5,5 @@
 runtime_resource_overlay {
     name: "LineageResOverlayBaldur",
     product_specific: true,
+    static_libs: ["//device/lenovo/sm8850-common:LineageLightCapabilityRes"],
 }
