@@ -107,7 +107,6 @@ sched-walt.ko
 qcom_ipc_logging.ko
 qrtr.ko
 smcinvoke_dlkm.ko
-smcinvoke_dlkm.ko
 qcom_dynamic_ramoops.ko
 qti_pmic_glink.ko
 qti_battery_charger.ko
