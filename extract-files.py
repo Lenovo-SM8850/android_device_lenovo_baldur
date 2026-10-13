@@ -77,8 +77,10 @@ module = ExtractUtilsModule(
 )
 
 
+shared_module = ExtractUtils.get_module('sm8850-common', module.vendor)
+module.blob_fixups = {**shared_module.blob_fixups, **module.blob_fixups}
+module.lib_fixups = {**shared_module.lib_fixups, **module.lib_fixups}
+
 if __name__ == '__main__':
-    common = ExtractUtils.get_module('sm8850-common', module.vendor)
-    common.namespace_imports = [f'vendor/lenovo/{module.device}', *common.namespace_imports]
-    utils = ExtractUtils(module, [common])
+    utils = ExtractUtils.device_with_common(module, 'sm8850-common', module.vendor)
     utils.run()
