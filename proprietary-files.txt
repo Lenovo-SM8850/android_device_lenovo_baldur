@@ -540,7 +540,6 @@ vendor/bin/hw/vendor.qti.hardware.spu-service
 vendor/bin/init.qti.keymaster.sh
 vendor/bin/qseecomd
 vendor/bin/trusteduilistener
-vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
 vendor/etc/init/android.hardware.gatekeeper-service-spu-qti.rc
 vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc
 vendor/etc/init/android.hardware.weaver-service-spu-qti.rc
