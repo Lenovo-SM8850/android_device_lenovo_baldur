@@ -7,7 +7,7 @@
 prebuilt_etc {
     name: "init.lenovo.baldur.rc",
     required: ["init.lenovo.common.rc"],
-    src: "etc/init.lenovo.baldur.rc",
+    src: "init.lenovo.baldur.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -15,23 +15,15 @@ prebuilt_etc {
 // Device fstab.
 prebuilt_etc {
     name: "fstab.qcom",
-    src: "etc/fstab.qcom",
+    src: "fstab.qcom",
     vendor: true,
-}
-
-// Preserve /first_stage_ramdisk/fstab.qcom in the dedicated vendor ramdisk.
-prebuilt_first_stage_ramdisk {
-    name: "fstab.qcom.vendor_ramdisk",
-    filename: "fstab.qcom",
-    src: "etc/fstab.qcom",
-    vendor_ramdisk: true,
-    install_in_root: true,
+    vendor_ramdisk_available: true,
 }
 
 // NVT pen
 prebuilt_etc {
     name: "init.baldur.pen.rc",
-    src: "etc/init.baldur.pen.rc",
+    src: "init.baldur.pen.rc",
     sub_dir: "init",
     vendor: true,
 }

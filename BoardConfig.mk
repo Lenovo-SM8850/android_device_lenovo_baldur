@@ -6,6 +6,9 @@
 # Paths
 DEVICE_PATH := device/lenovo/baldur
 
+# Partitions
+BOARD_SUPER_PARTITION_SIZE := 21474836480
+
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
 
@@ -17,6 +20,7 @@ RECOVERY_KERNEL_MODULES := $(BOOT_KERNEL_MODULES)
 TARGET_SCREEN_DENSITY := 440
 
 # Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 TARGET_RECOVERY_UI_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/brightness
 TARGET_RECOVERY_UI_MAX_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/max_brightness
 
@@ -28,8 +32,6 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 # Verified Boot
 BOARD_AVB_BOOT_ROLLBACK_INDEX := 1749081600
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 1783209600
-
-# VINTF
 
 # Include the proprietary files makefile.
 include vendor/lenovo/baldur/BoardConfigVendor.mk
