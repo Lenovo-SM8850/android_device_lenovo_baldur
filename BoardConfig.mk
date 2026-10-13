@@ -13,6 +13,9 @@ BOARD_SUPER_PARTITION_SIZE := 21474836480
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
 include device/lenovo/sm8850-common/BoardConfigDevice.mk
 
+# Optional switch supplier dependency
+BOOT_KERNEL_MODULES += mbhc_dlkm.ko
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := baldur,TB323FU
 
