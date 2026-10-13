@@ -9,14 +9,7 @@ DEVICE_PATH := device/lenovo/baldur
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
 
-# Kernel
-TARGET_KERNEL_SOURCE := vendor/lenovo/sm8850
-TARGET_KERNEL_PLATFORM_TARGET := canoe_perf
-TARGET_KERNEL_UNSAFE_DDK_HEADERS := true
-TARGET_KERNEL_MIXED_MODE := true
-
 # DTB / DTBO
-BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_DTB_LIST_WILDCARD := baldur-canoe-base
 
 # Recovery modules
