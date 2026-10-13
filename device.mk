@@ -52,8 +52,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # IMS
-# Without this feature ImsManager is null; SystemUI injects it non-null
-# Through ImsRepository/WifiRepositoryImpl, including on Wi-Fi-only devices.
+# SystemUI requires IMS discovery on Wi-Fi-only devices.
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.ims.xml
 
@@ -65,8 +64,7 @@ PRODUCT_PACKAGES += \
 # Recovery
 $(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
 
-# NVT loads its runtime firmware after panel reset, including in recovery.
-# Use the kernel's direct search path without depending on ueventd fallback.
+# Recovery touch requires Novatek firmware in the direct search path.
 PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/novatek_ts_fw.bin
 
