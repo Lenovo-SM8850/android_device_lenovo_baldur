@@ -6,6 +6,8 @@
 LOCAL_PATH := device/lenovo/baldur
 DEVICE_PATH := $(LOCAL_PATH)
 
+PRODUCT_PACKAGES += ueventd.baldur.rc
+
 PRODUCT_PACKAGES += \
     init.baldur.rc
 
