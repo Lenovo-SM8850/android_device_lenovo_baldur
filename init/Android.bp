@@ -27,3 +27,11 @@ prebuilt_etc {
     sub_dir: "init",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "ueventd.lenovo.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.lenovo.rc",
+    required: ["ueventd.lenovo.common.rc"],
+    device_specific: true,
+}
