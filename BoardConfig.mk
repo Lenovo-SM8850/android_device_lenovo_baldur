@@ -19,6 +19,10 @@ RECOVERY_KERNEL_MODULES := $(BOOT_KERNEL_MODULES)
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 TARGET_RECOVERY_UI_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/brightness
