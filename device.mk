@@ -11,7 +11,6 @@ PRODUCT_PACKAGES += \
 
 # Pen
 PRODUCT_PACKAGES += \
-    LenovoPenResTarget \
     init.baldur.pen.rc
 
 PRODUCT_COPY_FILES += \
@@ -61,8 +60,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayBaldur \
-    FrameworksResTargetBaldur \
-    LineageResOverlayBaldur
+    FrameworksResTargetBaldur
 
 # Recovery
 $(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
