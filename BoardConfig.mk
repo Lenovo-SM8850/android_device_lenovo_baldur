@@ -8,6 +8,9 @@ DEVICE_PATH := device/lenovo/baldur
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := baldur,TB323FU
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
