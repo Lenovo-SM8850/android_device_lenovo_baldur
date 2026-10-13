@@ -1,0 +1,12 @@
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Device init
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "fstab.qcom",
+    vendor: true,
+    vendor_ramdisk_available: true,
+}
