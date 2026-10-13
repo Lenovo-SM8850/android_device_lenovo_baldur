@@ -62,7 +62,6 @@ PRODUCT_PACKAGES += \
     FrameworksResTargetBaldur
 
 # Recovery
-$(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
 
 # Recovery touch requires Novatek firmware in the direct search path.
 PRODUCT_COPY_FILES += \
