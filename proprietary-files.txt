@@ -893,3 +893,7 @@ vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_direct_channel_stub.so
 vendor/lib64/libsns_dynamic_loader_stub.so
 vendor/lib64/libsns_remote_proc_state_stub.so
+
+# Face ABI consumers
+vendor/lib64/libarcsoft_face_mink.so
+vendor/lib64/libbiometricsface_ca.arcsoft.so
