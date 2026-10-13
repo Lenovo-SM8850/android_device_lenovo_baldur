@@ -12,10 +12,6 @@ BOARD_SUPER_PARTITION_SIZE := 21474836480
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
 
-# Recovery modules
-BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
-RECOVERY_KERNEL_MODULES := $(BOOT_KERNEL_MODULES)
-
 # Display
 TARGET_SCREEN_DENSITY := 440
 
