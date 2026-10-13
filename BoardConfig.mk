@@ -9,14 +9,8 @@ DEVICE_PATH := device/lenovo/baldur
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
 
-# DTB / DTBO
-TARGET_DTB_LIST_WILDCARD := baldur-canoe-base
-
 # Recovery modules
-BOOT_KERNEL_MODULES := $(sort $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) \
-    $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD) cfg80211.ko cpu_phys_log_map.ko \
-    hdcp_qseecom_dlkm.ko libarc4.ko mac80211.ko rfkill.ko smmu_proxy_dlkm.ko \
-    tmecom-intf_dlkm.ko tz_log_dlkm.ko wcd_usbss_i2c.ko qts.ko)
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
 RECOVERY_KERNEL_MODULES := $(BOOT_KERNEL_MODULES)
 
 # Display
