@@ -7,7 +7,6 @@
     <string-array name="config_penIdentityToControllerType" translatable="false">
         <item>17EF:617F=2</item>
     </string-array>
-    <string name="config_penSupportedRefreshRate" translatable="false">120.0</string>
     <string name="config_penInputName" translatable="false">NVTCapacitivePen</string>
     <string name="config_penUEventDevPath" translatable="false">/devices/platform/novatek_ts</string>
     <!-- Ready/MAC CHANGE reports precede identity in the NVT pen report path. -->

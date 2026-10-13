@@ -11,6 +11,7 @@ BOARD_SUPER_PARTITION_SIZE := 21474836480
 
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/sm8850-common/BoardConfigCommon.mk
+include device/lenovo/sm8850-common/BoardConfigDevice.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := baldur,TB323FU
@@ -18,18 +19,9 @@ TARGET_OTA_ASSERT_DEVICE := baldur,TB323FU
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Properties
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
-
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 TARGET_RECOVERY_UI_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/brightness
 TARGET_RECOVERY_UI_MAX_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/max_brightness
-
-# SELinux
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Verified Boot
 BOARD_AVB_BOOT_ROLLBACK_INDEX := 1749081600
