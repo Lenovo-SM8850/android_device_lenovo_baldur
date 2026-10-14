@@ -798,3 +798,9 @@ vendor/lib64/libsns_remote_proc_state_stub.so|91b26d4d3d691b5513b1da399c42dc34b2
 # Face ABI consumers
 vendor/lib64/libarcsoft_face_mink.so|b8464c712c9badcb5a93abeae423233766800e74
 vendor/lib64/libbiometricsface_ca.arcsoft.so|c531d4aa1677c341cf88c8fad8d2316c2990e29e
+
+# LCD enhancements
+vendor/bin/init.qcom.cabl.sh
+vendor/bin/init.qcom.cabl.off.sh
+vendor/bin/init.qcom.svi.sh
+vendor/bin/init.qcom.svi.off.sh
