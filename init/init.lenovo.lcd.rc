@@ -1,0 +1,42 @@
+service cabl-on /vendor/bin/init.qcom.cabl.sh
+    class main
+    user system
+    group root system
+    oneshot
+    disabled
+
+service cabl-off /vendor/bin/init.qcom.cabl.off.sh
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+on property:persist.sys.open.cabl=on
+    start cabl-on
+
+on property:persist.sys.open.cabl=off
+    start cabl-off
+
+service svi-on /vendor/bin/init.qcom.svi.sh
+    class main
+    user system
+    group root system
+    oneshot
+    disabled
+
+service svi-off /vendor/bin/init.qcom.svi.off.sh
+    class main
+    user system
+    group root system
+    oneshot
+    disabled
+
+on property:persist.sys.open.svi=on
+    start svi-on
+
+on property:persist.sys.open.svi=off
+    start svi-off
+
+on property:sys.boot_completed=1
+    start cabl-on
