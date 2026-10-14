@@ -1,0 +1,5 @@
+
+/(vendor|system/vendor)/bin/init\.qcom\.svi\.sh        u:object_r:vendor_qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.qcom\.cabl\.sh       u:object_r:vendor_qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.qcom\.svi\.off\.sh   u:object_r:vendor_qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.qcom\.cabl\.off\.sh  u:object_r:vendor_qti_init_shell_exec:s0
