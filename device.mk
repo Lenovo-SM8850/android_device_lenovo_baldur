@@ -6,11 +6,6 @@
 LOCAL_PATH := device/lenovo/baldur
 DEVICE_PATH := $(LOCAL_PATH)
 
-PRODUCT_PACKAGES += ueventd.baldur.rc
-
-PRODUCT_PACKAGES += \
-    init.baldur.rc
-
 LENOVO_DEVICE_CONFIG_PATH := device/lenovo/baldur
 
 # Display
@@ -24,6 +19,14 @@ PRODUCT_COPY_FILES += \
 # SystemUI requires IMS discovery on Wi-Fi-only devices.
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.ims.xml
+
+# Init
+PRODUCT_PACKAGES += init.baldur.lcd.rc
+
+PRODUCT_PACKAGES += ueventd.baldur.rc
+
+PRODUCT_PACKAGES += \
+    init.baldur.rc
 
 # Recovery
 # Recovery touch requires Novatek firmware in the direct search path.
