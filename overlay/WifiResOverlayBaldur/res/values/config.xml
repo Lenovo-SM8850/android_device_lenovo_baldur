@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Without telephony, take the country the access points around agree on -->
+    <bool name="config_wifiUpdateCountryCodeFromScanResultGeneric">true</bool>
+</resources>

@@ -49,7 +49,8 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayBaldur \
-    FrameworksResTargetBaldur
+    FrameworksResTargetBaldur \
+    WifiResOverlayBaldur
 
 # Recovery
 
