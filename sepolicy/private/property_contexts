@@ -1,1 +1,2 @@
 sys.lenovo.pen.type u:object_r:lenovo_pen_type_prop:s0 exact enum 2
+sys.lenovo.pen.support u:object_r:lenovo_pen_support_prop:s0 exact enum 0 1 2
