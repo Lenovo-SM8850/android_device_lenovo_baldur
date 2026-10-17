@@ -62,7 +62,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 LENOVO_DEVICE_CONFIG_PATH := device/lenovo/baldur
-include device/lenovo/sm8850-common/device-configs.mk
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/lenovo/sm8850-common/common.mk)
