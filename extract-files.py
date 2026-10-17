@@ -34,23 +34,26 @@ lib_fixups: lib_fixups_user_type = {
 
 # Device blob fixups
 blob_fixups: blob_fixups_user_type = {
-    (
-        'vendor/lib64/soundfx/libquasar.so',
-        'vendor/lib64/camera/components/com.qti.node.fd.so',
-        'vendor/lib64/hw/camera.qcom.core.so',
-        'vendor/lib64/libcamerapoweroptfeature.so',
-        'vendor/lib64/libcamxdumpinforecorder.so',
-        'vendor/lib64/libpowercore.so',
-        'vendor/lib64/libvideooptfeature.so',
-    ): blob_fixup()
-        .replace_needed('libtinyxml2.so', 'libtinyxml2-v36.so'),
-    (
-        'vendor/lib64/camera/components/com.qti.node.dewarp.so',
-        'vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
-    ): blob_fixup()
-        .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
-    'vendor/lib64/libqcodec2_core.so': blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    'vendor/etc/displayconfig/display_id_4630946261688083603.xml': blob_fixup()
+        .regex_replace(r'<minimumHdrPercentOfScreen>0\.1</minimumHdrPercentOfScreen>',
+                       '<minimumHdrPercentOfScreen>0.05</minimumHdrPercentOfScreen>'),
+        (
+            'vendor/lib64/soundfx/libquasar.so',
+            'vendor/lib64/camera/components/com.qti.node.fd.so',
+            'vendor/lib64/hw/camera.qcom.core.so',
+            'vendor/lib64/libcamerapoweroptfeature.so',
+            'vendor/lib64/libcamxdumpinforecorder.so',
+            'vendor/lib64/libpowercore.so',
+            'vendor/lib64/libvideooptfeature.so',
+        ): blob_fixup()
+            .replace_needed('libtinyxml2.so', 'libtinyxml2-v36.so'),
+        (
+            'vendor/lib64/camera/components/com.qti.node.dewarp.so',
+            'vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
+        ): blob_fixup()
+            .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
+        'vendor/lib64/libqcodec2_core.so': blob_fixup()
+            .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     (
         'vendor/etc/media_codecs_canoe_sku1_vendor.xml',
         'vendor/etc/media_codecs_canoe_v2_vendor.xml',
