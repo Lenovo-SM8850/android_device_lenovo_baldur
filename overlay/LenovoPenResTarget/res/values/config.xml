@@ -11,5 +11,4 @@
     <string name="config_penUEventDevPath" translatable="false">/devices/platform/novatek_ts</string>
     <!-- Ready/MAC CHANGE reports precede identity in the NVT pen report path. -->
     <bool name="config_penEarlyChangeActivity">true</bool>
-    <bool name="config_penSupportBridge">true</bool>
 </resources>
