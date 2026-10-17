@@ -12,6 +12,7 @@ ro.vendor.display.svi=1
 vendor.display.cabl.config=1
 vendor.display.cabl.config_path=/vendor/etc/cablconfig.xml
 vendor.display.lcd_density=440
+vendor.display.stc_disable_hdr_modes=1
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/display/SVIConfig.xml
 vendor.display.svi_threshold_nits=500
