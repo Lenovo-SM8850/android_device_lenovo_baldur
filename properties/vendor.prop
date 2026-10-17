@@ -27,3 +27,9 @@ vendor.display.svi_threshold_nits=500
 
 # Display color mode
 persist.sys.sf.native_mode=257
+
+# Keep STC in SDR modes for HDR content
+vendor.display.stc_disable_hdr_modes=1
+
+# Tone-map HDR in SurfaceFlinger at the current brightness
+vendor.display.disable_hdr_lut_gen=1
