@@ -27,6 +27,3 @@ vendor.display.svi_threshold_nits=500
 
 # Display color mode
 persist.sys.sf.native_mode=257
-
-# Sensors
-sensor.barometer.high_quality.implemented=true
