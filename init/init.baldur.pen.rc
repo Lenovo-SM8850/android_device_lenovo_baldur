@@ -3,13 +3,18 @@
 #
 
 # The controller replays its cached settings after firmware reload and resume.
-# Keep pen mode on from boot: the controller only senses the pen in this mode,
-# so writing and pen double-tap wake work before or without Bluetooth pairing.
+# Keep pen mode off by default until a pen connects.
 on post-fs-data
     write /proc/pen_type 2
-    write /proc/support_pen 1
     write /proc/pen_wakeup_mode 1
 
 # LenovoPen selects only identities supported by the device overlay.
 on property:sys.lenovo.pen.type=2
     write /proc/pen_type 2
+
+# The controller has no separate linking state here.
+on property:sys.lenovo.pen.support=1
+    write /proc/support_pen 1
+
+on property:sys.lenovo.pen.support=0
+    write /proc/support_pen 0
