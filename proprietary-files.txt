@@ -1,8 +1,8 @@
-# All blobs are from TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610 unless otherwise noted.
+# All blobs are from TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911 unless otherwise noted.
 # Per-file exceptions are identified by a preceding "From <release>" comment.
 
 # Display
-# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/lib64/libclstc_tm.so|d2173e2aaa3b56631041fc9e00682d580b992c69
 vendor/lib64/libhdr_als_adapter.so|691f3b8b57591ece620d854ba5abea1e57867bda
 vendor/lib64/libhdr_tm.so|680a056985cddce4c3a341cdfb601246292fab84
@@ -11,6 +11,7 @@ vendor/lib64/libsdm-colormgr-algo.so|a6123541a0ac493473aa7a69c1a96dc6831146ae
 vendor/lib64/libsdmextension.so|f63a76761e2a71adfc57893a27c2ca0edf694080
 
 # DSP / FastRPC
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
 vendor/lib/rfsa/adsp/capi_dofg_nn.so.1
@@ -26,15 +27,18 @@ vendor/lib64/rfs/dsp/libsvdsp.so
 vendor/lib64/rfs/dsp/libvpp_svc_skel.so
 
 # Audio effects
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/lib64/soundfx/libquasar.so
 
 # LED aw22xxx
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/firmware/10_100_green.bin
 vendor/firmware/10_30_red.bin
 vendor/firmware/10_60_blue.bin
 vendor/firmware/aw22xxx_fw.bin
 
 # WLAN
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/setwlansardsi0.sh
 vendor/bin/setwlansardsi1.sh
 vendor/bin/setwlansardsi2.sh
@@ -43,11 +47,13 @@ vendor/bin/setwlansardsi4.sh
 vendor/etc/wifi/sar-vendor-cmd.xml
 
 # SmartPA calibration / camera native dependencies
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/aw882xx_cali
 vendor/firmware/aw882xx_acf.bin
 vendor/lib64/camera/components/com.qti.node.mctfalign.so
 
 # Audio
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
 vendor/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb
 vendor/etc/acdbdata/canoe_atp/ATP_workspaceFileXml.qwsp
@@ -94,6 +100,7 @@ vendor/lib64/libstream_compress.so
 vendor/lib64/libstream_pcm.so
 
 # Camera
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/camera-preamble.json
 vendor/etc/pwr/CameraPowerOptFeature.xml
 vendor/etc/sensors/config/qsh_camera_common.json
@@ -277,6 +284,7 @@ vendor/lib64/libchinodeevautils.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so;DISABLE_DEPS
 
 # Camera tuning
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/lib64/com.qti.custom.settings.so
 vendor/lib64/com.qti.qseeaon.so
 vendor/lib64/com.qti.settings.sm8850.so
@@ -331,7 +339,13 @@ vendor/lib64/libsiminputgenutil.so
 vendor/lib64/libspcom.so
 vendor/lib64/libssd.so
 
+# Display
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
+vendor/bin/init.qcom.cabl.off.sh
+vendor/bin/init.qcom.cabl.sh
+
 # Face unlock
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/hw/android.hardware.biometrics.face@4.0-service.face
 vendor/firmware/arcface_ta.b00
 vendor/firmware/arcface_ta.b01
@@ -347,9 +361,11 @@ vendor/lib64/libarcsoft_faceid.so
 vendor/lib64/libfaceid_ca_proxy.arcsoft.so
 
 # Media SV DSP
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/lib64/libsv.so
 
 # Media / Video
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/init.qti.media.sh
 vendor/bin/vppservice
 vendor/etc/media_canoe_sku1/video_system_specs.json
@@ -387,6 +403,7 @@ vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvpplibrary.so
 
 # Modem / Radio / QMI
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/qcc-vendor
 vendor/etc/modem_configs.xml
 vendor/etc/telephony_packages.xml
@@ -419,6 +436,7 @@ vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
 
 # Display calibration
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/etc/cablconfig.xml
 vendor/etc/display/SVIConfig.xml
 vendor/etc/display/advanced_sf_offsets.xml
@@ -434,20 +452,25 @@ vendor/etc/displayconfig/display_id_4630947039571902851.xml
 vendor/etc/displayconfig/display_id_4630947075271898515.xml
 
 # Platform configuration
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/etc/backend_conf.xml
 vendor/etc/dcp_symbols/dcp.elf
 vendor/etc/qvirtmgr-vndr.json
-vendor/etc/yellochick_v1.pmd
 
 # Init
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc
 
 # Platform runtime
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/hw/vendor.lenovo.hardware.touchscreen-service
+vendor/bin/init.qcom.svi.off.sh
+vendor/bin/init.qcom.svi.sh
 vendor/bin/oemowninfo
 vendor/bin/profile_config_service.sh
 
 # Firmware / Security
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/hw/android.hardware.gatekeeper-rust-service-qti
 vendor/bin/hw/android.hardware.weaver-service-spu-qti
 vendor/bin/hw/vendor.qti.hardware.spu-service
@@ -481,6 +504,7 @@ vendor/lib64/libspukeymintutils.so
 vendor/lib64/vendor.qti.hardware.qteeconnector-V1-ndk.so
 
 # Sensors config
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/etc/sensors/config/json.lst
 vendor/etc/sensors/config/kaanapali_aw963xx_0.json
 vendor/etc/sensors/config/kaanapali_aw963xx_0_sar_register.json
@@ -497,6 +521,7 @@ vendor/etc/sensors/config/sns_diag_filter.json
 vendor/etc/sensors/javalibs/odpmanagerlib-aar
 
 # Sensors
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service
 vendor/lib64/libQshSession.so
 vendor/lib64/libsnsapi.so
@@ -504,10 +529,12 @@ vendor/lib64/libsnsutils.so
 vendor/lib64/sensors.qsh.so
 
 # Thermal engine
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/bin/thermal-engine-v2
 vendor/lib64/libthermalclient.so
 
 # Thermal power tuning
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/qapeboostsconfig.xml
@@ -532,11 +559,16 @@ vendor/etc/thermal-engine_cpu_4.conf
 vendor/etc/thermal_user_case.conf
 
 # Touchscreen firmware
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
 vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin
 
-# Device ABI consumers
+# AI / QNN
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/lib64/libQnnHtpV81Stub.so|d27f7a1b699764e72448a5cfc2e60c3de112d6db
+
+# Bluetooth
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/bin/hw/android.hardware.bluetooth@aidl-service-qti|bfca0194a701d08c035ac3d32d998280bc92f66f
 vendor/lib64/hw/android.hardware.bluetooth.lmp_event-impl-qti.so|2952eb97e985f463c95f7f99a93c19a634a265ba
 vendor/lib64/hw/android.hardware.bluetooth.ranging@aidl-impl-qti.so|eff15c66cbf71759da07ec62b2fd44b2f43dda04
@@ -544,12 +576,27 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|7474f272ef8e8d525374e
 vendor/lib64/hw/android.hardware.bluetooth@aidl-impl-qti.so|9b4a9605ddda449b09aa2fd5996b59bec918adbe
 vendor/lib64/hw/vendor.qti.hardware.bluetooth.finder-impl-qti.so|2e1b44b63b85ebb61b35055554c08239ae7e5962
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@aidl-impl.so|024282c11a6cf8265134718965d17518f0afb87b
+
+# GNSS location
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/lib64/libloc_eng_hub.so|a99d1b943ab5c4b1f3731c3d8f40d0eb1a99fc45
 vendor/lib64/libloc_qwes_iface.so|2c0cdceeeea1439c78ebaeb3d366ee6fafe4aa6a
+
+# GPU
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|ef89c1b09f7c7fd61714e1d3b394008d0a59fffc
 vendor/lib64/hw/vulkan.adreno.so|91932afcf0fd7602e0acae95b2e70acb8add7d5a
+
+# NFC / UCE / QAPE / WFD native dependencies
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/bin/qsap_qapeservice|5b04d51b6e23d7ba66f8771551d897f9434cd23a
+
+# WLAN
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/bin/wifi_qos_daemon|6c273b1a23de721952b02b8407da2213a4799b35
+
+# Audio
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/lib64/hw/audio.bluetooth_qti.default.so|916dd1a47f2dd73a7c233465333e8dbfcf25faf2
 vendor/lib64/libaudiofeaturestats.so|eb8b38e894269a940b20694f1ec3eb9739d30bf0
 vendor/lib64/liblistensoundmodelaidl.so|4f2d453f6a08bd2a7795e7db2e3e757d0b175542
@@ -559,6 +606,9 @@ vendor/lib64/libqc2audio_hooks.so|54698c6e22413337f2ce8ff82c97902c772b3fc3
 vendor/lib64/libqc2audio_platform.so|cd1e21c77d8a67ce273f323ab1857fa95c1f3efa
 vendor/lib64/libqc2audio_swaudiocodec.so|bc79e02f5c7e87881cb3ddc1dd9ba15e032977b0
 vendor/lib64/libqc2audio_utils.so|22d258a365ab9d8c3aebf6569f71dbf532925ccd
+
+# Camera
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/lib64/camera/com.qti.eeprom.gt24p128c2csli_imx766.so|8ab6a61b0f806f89e9dceb153a97a9ceced3a8bf
 vendor/lib64/camera/com.qti.eeprom.irs2381c_polar.so|13747bc0274d8c32033c00925ede19e5cb7f5d85
 vendor/lib64/camera/com.qti.eeprom.p24c256c_imx766.so|17adeb2c60755e39d825667e4ca6238651168bb5
@@ -612,8 +662,14 @@ vendor/lib64/libmmcamera_mfnr.so|4096f4ab4cf0f69ec707636f70e1f42bf77db46b
 vendor/lib64/libmmcamera_mfnr_t4.so|fcf174027550bd5e786f4bd4b33913fb4d5e3326
 vendor/lib64/libmmcamera_pdpc.so|4507bb674f4c2fa8cc031f84ca3245ea01c3843f
 vendor/lib64/libqshcamera.so|8f0391febf34bb7ab7e90eadc5b8f2af21f8ab69
+
+# Display (HDR)
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/lib64/libhdrdynamic.so|2042d823bc76c244a7a35290463e5a36214adb37
 vendor/lib64/libhdrdynamicootf.so|f3522ade93c714691b7db1e610c22f2835855967
+
+# Display
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/lib64/com.qualcomm.mcx.distortionmapper.so|b57013b7ebd0c266230d407bbb1df4489e71f755
 vendor/lib64/libclstc_algorithm_adapter.so|a6fdfc6edac7b5fca63b32bdabb879991635dcd9
 vendor/lib64/libcolor-default.so|a6f038f25d7af5d5a1923d288a72fd2a0cd0141a
@@ -623,8 +679,19 @@ vendor/lib64/libqdcm-algo.so|f0d885a31e167b1bb91c7681968933fe386642f3
 vendor/lib64/libqdcm-json-mode-parser.so|36946fa9200891095a8171a58c6a5549cc95ad16
 vendor/lib64/libqdcm-mode-parser.so|fb01d17b8a45d0d17382260284088c6b136236b1
 vendor/lib64/libsnapdragoncolor-qdcm.so|faa84fbb0474c2d66c1bf05940a53926c912b04e
+
+# Face unlock
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
+vendor/lib64/libarcsoft_face_mink.so|b8464c712c9badcb5a93abeae423233766800e74
+vendor/lib64/libbiometricsface_ca.arcsoft.so|c531d4aa1677c341cf88c8fad8d2316c2990e29e
+
+# Media / Video
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/lib64/libqcodec2_hooks.so|d47a07227bb2180db259504a1938226adcb8ee98
 vendor/lib64/libvppclient.so|bbe3098aeec6f1fc9cc9c40a8681e814544cfe69
+
+# Modem / Radio / QMI
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/bin/qmipriod|5218435180c411ef8d2c559995ceadb0c2ad1902
 vendor/lib64/lib-imsqimf.so|e9c64b7ce2ad157c0f093b7c5d05981e5e736767
 vendor/lib64/lib-imsxml.so|ef3761418e62c6a747c02547b13e8fa38f14c108
@@ -635,7 +702,13 @@ vendor/lib64/libqdp.so|2616714c05697501039044ebabbeb3246282cc43
 vendor/lib64/libqmi.so|faa4945df82cefc715a6e554ec978e82bd046167
 vendor/lib64/libqmi_csvt_srvc.so|fd258708c38daf0bc11f4375b87beacab40316c7
 vendor/lib64/libqmi_legacy.so|07a93262040b9e75641e35aaf319985de1e7a1fb
+
+# Platform HAL interfaces
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service|e683f4b73ae4d9981207b119c9e7576a6f2e4075
+
+# Platform runtime
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/bin/C2PAInternetService|fb162a05aef07b0e5882900da72c2cbcf27ff26e
 vendor/bin/adpl|540b14b2c54241592eca842f993473cff310aa97
 vendor/bin/avf_qcvm_manager|c655f0abdd896bdefe9bb1c29711b36ad4d6a699
@@ -761,6 +834,9 @@ vendor/lib64/libtlpd_internal.so|80cd7a7d3cfd5650f1aa6c05182ea773ac591f30
 vendor/lib64/libtlpd_logger.so|6bf645622cc2e227a58ea0bba81c4fc1051a9a69
 vendor/lib64/libubifocus.so|8d93cf98041bc70b7b42961ae5511f21cf6b6226
 vendor/lib64/libxml.so|8a31029067d78999150815c78be6ebbda49284f5
+
+# Performance
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/bin/feature_enabler_client|d129d5e998c6149fdf5463ccbf2ab1dfa442630a
 vendor/bin/hw/vendor.qti.hardware.perf2-hal-service|eab411c6d24ad33542e5c69f2eb6bb9340c248ef
 vendor/bin/poweropt-service|5b35696ca4625eca14c557a74bdf60975ab7d71e
@@ -777,6 +853,9 @@ vendor/lib64/libqti-perfd.so|9055a34cd20c8bae6d5bd0932d00339b5b886205
 vendor/lib64/libqti-perfextn-intf.so|c820b9353d8ff6e8d0dc090061d75e2078d76711
 vendor/lib64/libreffeature.so|8d55458baba691ad3d9943637b2860d938f3ca1d
 vendor/lib64/libstandbyfeature.so|c2f89edd759d55139da34d2c03f35b89d733808a
+
+# Firmware / Security
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/bin/hw/android.hardware.gatekeeper-service-spu-qti|85167922dd436b61ad96424559445f1b531b1989
 vendor/bin/hw/android.hardware.security.onekeymint-service-qti|b88d46a45a95b548596c107a0793ad85ac7d3f02
 vendor/bin/hw/vendor.qti.hardware.trustedui-aidl-service-qti|51c6031c9fac0b5fdba288c4903b9c76660bf761
@@ -788,19 +867,12 @@ vendor/lib64/libqtikeymaster4.so|e7d5fb2831f3261bc8a175796435fd3b44296375
 vendor/lib64/libspuprovisionids.so|cfd5fcf5a3c0aedc521feb461667ac5b83c32215
 vendor/lib64/libtee_provisioner_qti.so|07e4137cac2ab7d8a430d82699e887755ebb201b
 vendor/lib64/libtzdrmgenprov.so|ae4c4afa3d31b410c32fa7e7d54747e391d4e719
+
+# Sensors
+# From TB324ZC_CN_OPEN_USER_Q00029.0_A16_ZUXOS_2.0.10.262_ST_260919
 vendor/bin/qsap_sensors|f853e0833e75f632b5096c06b60f14b259bc0844
 vendor/lib64/libqsh.so|703f88a48137c8d57c47659aa206939846149203
 vendor/lib64/libsns_device_mode_stub.so|5e3a9664fb4afbf8d27224592bb2ff76aeaf04e6
 vendor/lib64/libsns_direct_channel_stub.so|9bda0bcf6d08af308bd0d6c8203b267c2117ac94
 vendor/lib64/libsns_dynamic_loader_stub.so|c4377aae98cd7d2d7de2c2015c28ec9feee88502
 vendor/lib64/libsns_remote_proc_state_stub.so|91b26d4d3d691b5513b1da399c42dc34b24bacc2
-
-# Face ABI consumers
-vendor/lib64/libarcsoft_face_mink.so|b8464c712c9badcb5a93abeae423233766800e74
-vendor/lib64/libbiometricsface_ca.arcsoft.so|c531d4aa1677c341cf88c8fad8d2316c2990e29e
-
-# LCD enhancements
-vendor/bin/init.qcom.cabl.sh
-vendor/bin/init.qcom.cabl.off.sh
-vendor/bin/init.qcom.svi.sh
-vendor/bin/init.qcom.svi.off.sh
