@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from baldur (TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610).
+## are from baldur (TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911).
 
 # Audio
 vendor/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb
@@ -83,15 +83,20 @@ vendor/lib64/camera/components/com.qti.hwcfg.ipe.so
 vendor/lib64/camera/components/com.qti.hwcfg.mctfe.so
 vendor/lib64/camera/components/com.qti.hwcfg.ofe.so
 vendor/lib64/camera/components/com.qti.node.aon.so
+vendor/lib64/camera/components/com.qti.node.customhwnode.so
 vendor/lib64/camera/components/com.qti.node.depth.so
 vendor/lib64/camera/components/com.qti.node.depthprovider.so
 vendor/lib64/camera/components/com.qti.node.dewarp.so;DISABLE_DEPS
+vendor/lib64/camera/components/com.qti.node.dummydepth.so
 vendor/lib64/camera/components/com.qti.node.dummyrtb.so
+vendor/lib64/camera/components/com.qti.node.dummysat.so
 vendor/lib64/camera/components/com.qti.node.eisv2.so
 vendor/lib64/camera/components/com.qti.node.eisv3.so
 vendor/lib64/camera/components/com.qti.node.evadepth.so
 vendor/lib64/camera/components/com.qti.node.evaitof.so
 vendor/lib64/camera/components/com.qti.node.evawarp.so
+vendor/lib64/camera/components/com.qti.node.evs.so
+vendor/lib64/camera/components/com.qti.node.fcv.so
 vendor/lib64/camera/components/com.qti.node.fd.so
 vendor/lib64/camera/components/com.qti.node.frc.so
 vendor/lib64/camera/components/com.qti.node.gme.so
@@ -101,6 +106,7 @@ vendor/lib64/camera/components/com.qti.node.hdl.so
 vendor/lib64/camera/components/com.qti.node.hdr10pgen.so
 vendor/lib64/camera/components/com.qti.node.hdralign.so
 vendor/lib64/camera/components/com.qti.node.itofpreprocess.so
+vendor/lib64/camera/components/com.qti.node.lenovo.so
 vendor/lib64/camera/components/com.qti.node.memcpy.so
 vendor/lib64/camera/components/com.qti.node.ml.so
 vendor/lib64/camera/components/com.qti.node.mmfalign.so
@@ -108,9 +114,13 @@ vendor/lib64/camera/components/com.qti.node.multiport.so
 vendor/lib64/camera/components/com.qti.node.muxer.so
 vendor/lib64/camera/components/com.qti.node.qsatalign.so
 vendor/lib64/camera/components/com.qti.node.rectification.so
+vendor/lib64/camera/components/com.qti.node.remosaic.so
 vendor/lib64/camera/components/com.qti.node.sat.so
 vendor/lib64/camera/components/com.qti.node.seg.so
 vendor/lib64/camera/components/com.qti.node.signedjpeg.so
+vendor/lib64/camera/components/com.qti.node.spdepth.so
+vendor/lib64/camera/components/com.qti.node.stich.so
+vendor/lib64/camera/components/com.qti.node.superportraitvideo.so
 vendor/lib64/camera/components/com.qti.node.swaidenoiser.so
 vendor/lib64/camera/components/com.qti.node.swbestats.so
 vendor/lib64/camera/components/com.qti.node.swcac.so
@@ -118,23 +128,41 @@ vendor/lib64/camera/components/com.qti.node.swfusion.so
 vendor/lib64/camera/components/com.qti.node.swhme.so
 vendor/lib64/camera/components/com.qti.node.swlsc.so
 vendor/lib64/camera/components/com.qti.node.swmctf.so
+vendor/lib64/camera/components/com.qti.node.swmlremosaic.so
 vendor/lib64/camera/components/com.qti.node.swpdpc.so
+vendor/lib64/camera/components/com.qti.node.swpreprocess.so
+vendor/lib64/camera/components/com.qti.node.swregistration.so
 vendor/lib64/camera/components/com.qti.stats.aec.so
+vendor/lib64/camera/components/com.qti.stats.aecwrapper.so
 vendor/lib64/camera/components/com.qti.stats.aecxcore.so
 vendor/lib64/camera/components/com.qti.stats.af.so
 vendor/lib64/camera/components/com.qti.stats.afc.so
 vendor/lib64/camera/components/com.qti.stats.afd.so
+vendor/lib64/camera/components/com.qti.stats.afwrapper.so
 vendor/lib64/camera/components/com.qti.stats.asd.so
 vendor/lib64/camera/components/com.qti.stats.awb.so
 vendor/lib64/camera/components/com.qti.stats.awbr.so
+vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
 vendor/lib64/camera/components/com.qti.stats.cnndriver.so
+vendor/lib64/camera/components/com.qti.stats.exampleaf.so
+vendor/lib64/camera/components/com.qti.stats.haf.so
+vendor/lib64/camera/components/com.qti.stats.hafoverride.so
+vendor/lib64/camera/components/com.qti.stats.localhistogram.so
 vendor/lib64/camera/components/com.qti.stats.pdlib.so
+vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
+vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
+vendor/lib64/camera/components/com.qti.stats.roimixer.so
 vendor/lib64/camera/components/com.qti.stats.roimixerlib.so
 vendor/lib64/camera/components/com.qti.stats.tracker.so
+vendor/lib64/camera/components/com.qtistatic.stats.aec.so
+vendor/lib64/camera/components/com.qtistatic.stats.af.so
+vendor/lib64/camera/components/com.qtistatic.stats.awb.so
+vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/libcamxdummysatsnapshotfusionwrapper.so
 vendor/lib64/camera/components/libcamxdummysatsoftwarefusionwrapper.so
 vendor/lib64/camera/components/libcamxdummysatwrapper.so
 vendor/lib64/camera/components/libcamxevainterface.so
+vendor/lib64/camera/components/libdepthmapwrapper_itof.so
 vendor/lib64/com.qti.camx.chiiqutils.so
 vendor/lib64/com.qti.chifeaturecompatibility.so
 vendor/lib64/com.qti.chiusecaseselector.so
@@ -165,76 +193,46 @@ vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.statsregeneration.so
 vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
+vendor/lib64/com.qti.platformsettings.sm8850.so
+vendor/lib64/com.qti.qseeutils.so
+vendor/lib64/com.qti.stats.common.so
+vendor/lib64/com.qualcomm.mcx.nonlinearmapper.so
 vendor/lib64/hw/camera.qcom.core.so
 vendor/lib64/hw/camera.qcom.sm8850.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.offline.so
 vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/libcamerabuffer.so
 vendor/lib64/libcamerapoweroptfeature.so
+vendor/lib64/libcamxasyncdumpmanager.so
 vendor/lib64/libcamxcommonutils.so
 vendor/lib64/libcamxcoreutils.so
 vendor/lib64/libcamxcsl.so
 vendor/lib64/libcamxcslhw.so
+vendor/lib64/libcamxdumpinforecorder.so
 vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxhexlpservicebase.so
 vendor/lib64/libcamxhwlfrontend.so
 vendor/lib64/libcamxhwlipedriver.so
+vendor/lib64/libcamxhwnodecontext.so
+vendor/lib64/libcamxhwquery.so
 vendor/lib64/libcamximageformatutils.so
 vendor/lib64/libcamxmetadata.so
+vendor/lib64/libcamxods.so
 vendor/lib64/libcamxofehwl.so
 vendor/lib64/libcamxofeswl.so
 vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxsettingsmanager.so
+vendor/lib64/libcamxsocketclientutil.so
+vendor/lib64/libcamxsocketserverutil.so
 vendor/lib64/libcamxswispiqmodule.so
 vendor/lib64/libcamxswlipedriver.so
+vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcamxvppservicebase.so
 vendor/lib64/libchicore.so
 vendor/lib64/libchifeature2.so
 vendor/lib64/libchinodeevautils.so
-
-# Camera ABI
-vendor/lib64/camera/components/com.qti.node.customhwnode.so
-vendor/lib64/camera/components/com.qti.node.dummydepth.so
-vendor/lib64/camera/components/com.qti.node.dummysat.so
-vendor/lib64/camera/components/com.qti.node.evs.so
-vendor/lib64/camera/components/com.qti.node.fcv.so
-vendor/lib64/camera/components/com.qti.node.lenovo.so
-vendor/lib64/camera/components/com.qti.node.remosaic.so
-vendor/lib64/camera/components/com.qti.node.spdepth.so
-vendor/lib64/camera/components/com.qti.node.stich.so
-vendor/lib64/camera/components/com.qti.node.superportraitvideo.so
-vendor/lib64/camera/components/com.qti.node.swmlremosaic.so
-vendor/lib64/camera/components/com.qti.node.swpreprocess.so
-vendor/lib64/camera/components/com.qti.node.swregistration.so
-vendor/lib64/camera/components/com.qti.stats.aecwrapper.so
-vendor/lib64/camera/components/com.qti.stats.afwrapper.so
-vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
-vendor/lib64/camera/components/com.qti.stats.exampleaf.so
-vendor/lib64/camera/components/com.qti.stats.haf.so
-vendor/lib64/camera/components/com.qti.stats.hafoverride.so
-vendor/lib64/camera/components/com.qti.stats.localhistogram.so
-vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
-vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
-vendor/lib64/camera/components/com.qti.stats.roimixer.so
-vendor/lib64/camera/components/com.qtistatic.stats.aec.so
-vendor/lib64/camera/components/com.qtistatic.stats.af.so
-vendor/lib64/camera/components/com.qtistatic.stats.awb.so
-vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
-vendor/lib64/camera/components/libdepthmapwrapper_itof.so
-vendor/lib64/com.qti.platformsettings.sm8850.so
-vendor/lib64/com.qti.qseeutils.so
-vendor/lib64/com.qti.stats.common.so
-vendor/lib64/com.qualcomm.mcx.nonlinearmapper.so
-vendor/lib64/libcamerabuffer.so
-vendor/lib64/libcamxasyncdumpmanager.so
-vendor/lib64/libcamxdumpinforecorder.so
-vendor/lib64/libcamxhwnodecontext.so
-vendor/lib64/libcamxhwquery.so
-vendor/lib64/libcamxods.so
-vendor/lib64/libcamxsocketclientutil.so
-vendor/lib64/libcamxsocketserverutil.so
-vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchinodehmeutils.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libisphwsetting.so
@@ -252,7 +250,27 @@ vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.mcx.policy.sfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 
-# Device ABI consumers
+# Display
+vendor/bin/init.qcom.cabl.off.sh
+vendor/bin/init.qcom.cabl.sh
+vendor/lib64/libclstc_tm.so
+vendor/lib64/libsdmextension.so
+
+# Display calibration
+vendor/etc/cablconfig.xml
+vendor/etc/display/SVIConfig.xml
+vendor/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_p3.txt
+vendor/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_srgb.txt
+vendor/etc/display/qdcm_calib_data_nt36523_3k_fhd_plus_165Hz_DPHY_video_panel.json
+vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json
+vendor/etc/displayconfig/display_id_4630946261688083603.xml
+vendor/etc/displayconfig/display_id_4630946850534658451.xml
+vendor/etc/displayconfig/display_id_4630947039571902850.xml
+vendor/etc/displayconfig/display_id_4630947039571902851.xml
+vendor/etc/displayconfig/display_id_4630947075271898515.xml
+
+# DSP / FastRPC
 vendor/bin/adpl
 vendor/bin/avf_qcvm_manager
 vendor/bin/hexlpservice
@@ -270,6 +288,7 @@ vendor/bin/sec_nvm
 vendor/bin/shsusrd
 vendor/bin/spdaemon
 vendor/bin/wifi_qos_daemon
+vendor/lib/rfsa/adsp/capi_dofg_nn.so.1
 vendor/lib64/camera/com.qti.eeprom.gt24p128c2csli_imx766.so
 vendor/lib64/camera/com.qti.eeprom.irs2381c_polar.so
 vendor/lib64/camera/com.qti.eeprom.p24c256c_imx766.so
@@ -325,27 +344,6 @@ vendor/lib64/libqwes.so
 vendor/lib64/libspuprovisionids.so
 vendor/lib64/libssdStaticHelper.so
 vendor/lib64/libtee_provisioner_qti.so
-
-# Display
-vendor/lib64/libclstc_tm.so
-vendor/lib64/libsdmextension.so
-
-# Display calibration
-vendor/etc/cablconfig.xml
-vendor/etc/display/SVIConfig.xml
-vendor/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_p3.txt
-vendor/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_srgb.txt
-vendor/etc/display/qdcm_calib_data_nt36523_3k_fhd_plus_165Hz_DPHY_video_panel.json
-vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json
-vendor/etc/displayconfig/display_id_4630946261688083603.xml
-vendor/etc/displayconfig/display_id_4630946850534658451.xml
-vendor/etc/displayconfig/display_id_4630947039571902850.xml
-vendor/etc/displayconfig/display_id_4630947039571902851.xml
-vendor/etc/displayconfig/display_id_4630947075271898515.xml
-
-# DSP / FastRPC
-vendor/lib/rfsa/adsp/capi_dofg_nn.so.1
 vendor/lib64/rfs/dsp/libnsp_ipc_cdsp_skel.so
 vendor/lib64/rfs/dsp/libnspextensioncopyprovider.so
 vendor/lib64/rfs/dsp/libnspextensionsuperresolutionprovider.so
@@ -408,12 +406,6 @@ vendor/etc/init/lowi-server.rc
 vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc
 vendor/etc/init/yepdiag.rc
 
-# LCD enhancements
-vendor/bin/init.qcom.cabl.off.sh
-vendor/bin/init.qcom.cabl.sh
-vendor/bin/init.qcom.svi.off.sh
-vendor/bin/init.qcom.svi.sh
-
 # LED aw22xxx
 vendor/firmware/10_100_green.bin
 vendor/firmware/10_30_red.bin
@@ -440,6 +432,7 @@ vendor/lib64/libvideooptfeature.so
 
 # Modem / Radio / QMI
 vendor/bin/qcc-vendor
+vendor/bin/qseecomd
 vendor/etc/data/dsi_config.xml
 vendor/etc/modem_configs.xml
 vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml
@@ -457,7 +450,10 @@ vendor/firmware/vpu40_2v.mbn
 vendor/firmware/vpu40_2v_unsigned.mbn
 vendor/firmware/vpu40_2v_v1.mbn
 vendor/firmware/vpu40_2v_v1_unsigned.mbn
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/lib-imsdcservice.so
+vendor/lib64/libdpps.so
+vendor/lib64/libqesdk_qshsession.so
 vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 
 # Neural
@@ -480,12 +476,6 @@ vendor/lib64/libsn300u_fw.so
 vendor/etc/init/init.qccvendor.rc
 vendor/etc/init/vendor.qsap.mpamsvc.rc
 
-# Pinned native libraries
-vendor/bin/qseecomd
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/libdpps.so
-vendor/lib64/libqesdk_qshsession.so
-
 # Platform configuration
 vendor/etc/backend_conf.xml
 vendor/etc/dcp_symbols/dcp.elf
@@ -503,6 +493,8 @@ vendor/etc/seccomp_policy/qwesd@2.0.policy
 # Platform runtime
 vendor/bin/hw/vendor.lenovo.hardware.touchscreen-service
 vendor/bin/init.qcom.post_boot.sh
+vendor/bin/init.qcom.svi.off.sh
+vendor/bin/init.qcom.svi.sh
 vendor/bin/init.qti.kernel.debug-canoe.sh
 vendor/bin/oemowninfo
 vendor/bin/profile_config_service.sh

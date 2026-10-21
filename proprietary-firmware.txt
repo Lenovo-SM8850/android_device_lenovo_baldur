@@ -1,4 +1,4 @@
-# All firmware is from TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.088_ST_260610.
+# All firmware is from TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911.
 abl.img;AB
 aop.img;AB
 aop_config.img;AB
