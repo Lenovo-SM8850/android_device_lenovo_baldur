@@ -13,6 +13,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Hardware configuration
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/displayconfig/display_id_4630946261688083603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946261688083603.xml \
     $(LOCAL_PATH)/configs/display/displayconfig/display_id_4630946916234099603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946916234099603.xml
 
 # IMS
