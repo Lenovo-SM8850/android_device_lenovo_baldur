@@ -67,3 +67,6 @@ $(call inherit-product, device/lenovo/sm8850-common/common.mk)
 
 # Include the proprietary files makefile.
 $(call inherit-product, vendor/lenovo/baldur/baldur-vendor.mk)
+
+# Touchscreen rotation configuration
+PRODUCT_PACKAGES += TouchscreenRotationTarget
