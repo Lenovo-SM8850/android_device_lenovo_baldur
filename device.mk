@@ -14,6 +14,12 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml
 
+# Game performance
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/game-policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/game-policy.xml
+
+PRODUCT_PACKAGES += init.kernel.post_boot-canoe_default_6_2.sh
+
 # Hardware configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig/display_id_4630946261688083603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946261688083603.xml \
@@ -67,8 +73,6 @@ $(call soong_config_set_bool,lenovotouchpolicy,report_threshold_text,true)
 $(call soong_config_set_bool,lenovotouchpolicy,game_edge_text,true)
 $(call soong_config_set,lenovotouchpolicy,support_pen_linking,-1)
 $(call soong_config_set,lenovotouchpolicy,support_pen_session_off,0)
-
-PRODUCT_PACKAGES += init.kernel.post_boot-canoe_default_6_2.sh
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/lenovo/sm8850-common/common.mk)
