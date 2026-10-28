@@ -531,3 +531,7 @@ vendor/lib64/libdolbyeglcore.so
 vendor/lib64/libdolbyottcameracontrol.so
 vendor/lib64/libdolbyproxyandroid.so
 vendor/etc/dolby_vision.cfg
+
+# Game performance policy (Verbatim)
+# From TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911
+system/etc/gameperfconfig.xml:vendor/etc/gameperfconfig.xml

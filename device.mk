@@ -78,3 +78,7 @@ $(call inherit-product, vendor/lenovo/baldur/baldur-vendor.mk)
 
 # Touchscreen rotation configuration
 PRODUCT_PACKAGES += TouchscreenRotationTarget
+
+# Per-device game policy overlay
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/game-policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/game-policy.xml
