@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Paired verbatim data: TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911,
+     system/etc/gameperfconfig.xml (20260721), extracted to vendor/etc/gameperfconfig.xml.
+     CPU ceilings are kHz, GPU ceiling is Hz. The running OPP tables further restrict these. -->
+<game-policy version="1">
+    <mode id="1" profile="Balance" /> <!-- Standard -->
+    <mode id="2" profile="Savage" /> <!-- Performance -->
+    <mode id="3" profile="PowerSave" /> <!-- Battery -->
+    <!-- Example only: <alias pkg="com.example.global" profile="com.example.cn" threadPlacement="false" /> -->
+    <alias pkg="com.Sunborn.SnqxExilium.Glo" profile="com.Sunborn.SnqxExilium" /> <!-- Global -->
+    <alias pkg="com.seasun.snowbreak.google" profile="com.dragonli.projectsnow.lhm" /> <!-- Global -->
+    <alias pkg="com.gryphline.endfield.gp" profile="com.hypergryph.endfield" /> <!-- Global -->
+    <alias pkg="com.miHoYo.Nap.bilibili" profile="com.miHoYo.Nap" /> <!-- CN bilibili channel -->
+    <alias pkg="com.miHoYo.hkrpg.bilibili" profile="com.miHoYo.hkrpg" /> <!-- CN bilibili channel -->
+    <alias pkg="com.mobile.legends" profile="com.mobile.legends.usa" /> <!-- Global -->
+    <alias pkg="com.netease.nshmsea" profile="com.netease.nshm" /> <!-- Global/SEA -->
+    <alias pkg="com.netease.nshmhmt" profile="com.netease.nshm" /> <!-- TW/HK/MO -->
+    <alias pkg="vng.games.revelation.mobile" profile="com.netease.pm02" /> <!-- Vietnam/SEA -->
+    <alias pkg="com.icantw.ty" profile="com.netease.pm02" /> <!-- TW/HK/MO -->
+    <alias pkg="com.netease.h75na" profile="com.netease.yhtj" /> <!-- Global -->
+    <alias pkg="com.netease.yysls" profile="com.netease.yyslscn" /> <!-- Global -->
+    <alias pkg="com.netease.yyslshmt" profile="com.netease.yyslscn" /> <!-- TW/HK/MO -->
+    <alias pkg="com.infoldgames.infinitynikkien" profile="com.papegames.infinitynikki" /> <!-- Global -->
+    <alias pkg="com.levelinfinite.hotta.gp" profile="com.pwrd.hotta.laohu" /> <!-- Global -->
+    <alias pkg="tw.com.iwplay.ht" profile="com.pwrd.hotta.laohu" /> <!-- TW/HK/MO -->
+    <alias pkg="com.GlobalSoFunny.Sausage" profile="com.sofunny.Sausage" /> <!-- Global -->
+    <alias pkg="com.riotgames.league.wildrifttw" profile="com.riotgames.league.wildrift" /> <!-- TW/HK/MO -->
+    <alias pkg="com.nexon.kart" profile="com.tencent.tmgp.WePop" /> <!-- Global -->
+    <alias pkg="com.tencent.stc.cfl" profile="com.tencent.tmgp.cf" /> <!-- Global -->
+    <alias pkg="com.activision.callofduty.shooter" profile="com.tencent.tmgp.cod" /> <!-- Global -->
+    <alias pkg="com.garena.game.codm" profile="com.tencent.tmgp.cod" /> <!-- SEA/TW -->
+    <alias pkg="com.tencent.tmgp.kr.codm" profile="com.tencent.tmgp.cod" /> <!-- Korea -->
+    <alias pkg="com.pubg.imobile" profile="com.tencent.ig" /> <!-- India -->
+    <alias pkg="com.levelinfinite.sgameGlobal" profile="com.tencent.tmgp.sgame" /> <!-- Global -->
+    <alias pkg="com.garena.game.fctw" profile="com.tencent.tmgp.speedmobile" /> <!-- TW/SEA -->
+    <alias pkg="com.supercell.brawlstars" profile="com.tencent.tmgp.supercell.brawlstars" /> <!-- Global -->
+    <safety sensor="quiet-therm" hysteresisC="1" sampleMs="1000">
+        <resource name="Gold" ceiling="3628800" opps="/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies" />
+        <resource name="Prime" ceiling="4608000" opps="/sys/devices/system/cpu/cpufreq/policy6/scaling_available_frequencies" />
+        <resource name="Gpu" ceiling="1200000000" opps="/sys/class/kgsl/kgsl-3d0/gpu_available_frequencies" />
+    </safety>
+</game-policy>
