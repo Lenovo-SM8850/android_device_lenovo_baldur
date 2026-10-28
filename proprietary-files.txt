@@ -507,6 +507,7 @@ vendor/lib64/camera/components/com.qti.node.mctfalign.so
 vendor/bin/thermal-engine-v2
 
 # Thermal power tuning
+system/etc/gameperfconfig.xml:vendor/etc/gameperfconfig.xml
 vendor/etc/perf/factorsconfig.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/qapeboostsconfig.xml
