@@ -35,7 +35,8 @@
     <alias pkg="com.levelinfinite.sgameGlobal" profile="com.tencent.tmgp.sgame" /> <!-- Global -->
     <alias pkg="com.garena.game.fctw" profile="com.tencent.tmgp.speedmobile" /> <!-- TW/SEA -->
     <alias pkg="com.supercell.brawlstars" profile="com.tencent.tmgp.supercell.brawlstars" /> <!-- Global -->
-    <safety sensor="quiet-therm" hysteresisC="1" sampleMs="1000">
+    <!-- Placeholder until the per-device sustained-throttle onset is measured. -->
+    <safety sensor="quiet-therm" hysteresisC="1" sampleMs="1000" skinTarget="41000">
         <resource name="Gold" ceiling="3628800" opps="/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies" />
         <resource name="Prime" ceiling="4608000" opps="/sys/devices/system/cpu/cpufreq/policy6/scaling_available_frequencies" />
         <resource name="Gpu" ceiling="1200000000" opps="/sys/class/kgsl/kgsl-3d0/gpu_available_frequencies" />
