@@ -50,7 +50,8 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayBaldur \
-    FrameworksResTargetBaldur
+    FrameworksResTargetBaldur \
+    NexusLauncherOverlayBaldur
 
 # Recovery touch requires Novatek firmware in the direct search path.
 PRODUCT_COPY_FILES += \

@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: Apache-2.0
+
+runtime_resource_overlay {
+    name: "NexusLauncherOverlayBaldur",
+    product_specific: true,
+    // Resolve launcher-owned attributes against the unchanged prebuilt.
+    aaptflags: [
+        "--package-id",
+        "0x80",
+        "-I",
+        "vendor/gms/system_ext/packages/privileged_apps/NexusLauncherRelease/NexusLauncherRelease.apk",
+    ],
+}
