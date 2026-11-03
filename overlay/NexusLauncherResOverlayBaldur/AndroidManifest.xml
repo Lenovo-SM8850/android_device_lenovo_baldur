@@ -1,0 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.miner7222.overlay.nexuslauncher.baldur">
+    <overlay android:targetPackage="com.google.android.apps.nexuslauncher" android:isStatic="true" android:priority="0" />
+</manifest>

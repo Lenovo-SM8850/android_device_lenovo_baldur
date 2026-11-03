@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<cellSpecs xmlns:launcher="http://schemas.android.com/apk/prv/res/com.google.android.apps.nexuslauncher">
+    <specs launcher:maxAspectRatio="@*com.google.android.apps.nexuslauncher:dimen/aspect_ratio_portrait">
+        <cellSpec launcher:dimensionType="height" launcher:maxAvailableSize="9999dp">
+            <!-- Match the portrait hotseat to the taskbar for the home handoff. -->
+            <iconSize launcher:fixedSize="@*com.google.android.apps.nexuslauncher:dimen/iconSize52dp" />
+            <iconTextSize launcher:fixedSize="14sp" />
+            <iconDrawablePadding launcher:fixedSize="14dp" />
+        </cellSpec>
+    </specs>
+    <specs launcher:maxAspectRatio="@*com.google.android.apps.nexuslauncher:dimen/aspect_ratio_landscape">
+        <cellSpec launcher:dimensionType="height" launcher:maxAvailableSize="694dp">
+            <iconSize launcher:fixedSize="@*com.google.android.apps.nexuslauncher:dimen/iconSize52dp" />
+            <iconTextSize launcher:fixedSize="14sp" />
+            <iconDrawablePadding launcher:fixedSize="10dp" />
+        </cellSpec>
+        <cellSpec launcher:dimensionType="height" launcher:maxAvailableSize="9999dp">
+            <iconSize launcher:fixedSize="@*com.google.android.apps.nexuslauncher:dimen/iconSize60dp" />
+            <iconTextSize launcher:fixedSize="14sp" />
+            <iconDrawablePadding launcher:fixedSize="10dp" />
+        </cellSpec>
+    </specs>
+</cellSpecs>
