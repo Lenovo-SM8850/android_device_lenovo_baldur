@@ -239,4 +239,9 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
             </point>
         </sdrHdrRatioMap>
     </highBrightnessMode>
+    <!-- Fast and slow-increase rates are linear units/s; slow decrease is HLG units/s. -->
+    <screenBrightnessRampFastDecrease>0.70472443</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>0.70472443</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampSlowDecrease>0.024601705</screenBrightnessRampSlowDecrease>
+    <screenBrightnessRampSlowIncrease>0.19921569</screenBrightnessRampSlowIncrease>
 </displayConfiguration>
