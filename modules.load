@@ -58,10 +58,10 @@ nvt_36xxx.ko
 hqsysfs.ko
 lenovo_sys_temp.ko
 lenovo_thermal_control.ko
-nvmem_qfprom.ko
 pci-msm-drv.ko
 eom_driver.ko
 pci_phy_access.ko
+dwc_pcie_pmu.ko
 phy-qcom-eusb2-repeater.ko
 phy-qcom-m31-eusb2.ko
 phy-qcom-qmp-combo.ko
@@ -152,7 +152,6 @@ spi-msm-geni.ko
 spi-geni-qcom.ko
 spmi-pmic-arb-debug.ko
 bcl_pmic5.ko
-bcl_soc.ko
 cpu_hotplug.ko
 ddr_cdev.ko
 qcom-spmi-temp-alarm.ko
@@ -201,6 +200,7 @@ snd-usb-audio-qmi.ko
 qca_cld3_kiwi_v2.ko
 qca_cld3_peach_v2.ko
 qca_cld3_wcn7750.ko
+wonder.ko
 cnss2.ko
 icnss2.ko
 cnss_plat_ipc_qmi_svc.ko
@@ -229,7 +229,6 @@ stub_dlkm.ko
 machine_dlkm.ko
 swr_dmic_dlkm.ko
 swr_haptics_dlkm.ko
-hdmi_dlkm.ko
 lpass_cdc_wsa2_macro_dlkm.ko
 lpass_cdc_wsa_macro_dlkm.ko
 lpass_cdc_va_macro_dlkm.ko
@@ -250,6 +249,7 @@ lpass_bt_swr_dlkm.ko
 qmp_dlkm.ko
 simple_amp_dlkm.ko
 wsa885x_i2c_dlkm.ko
+hdmi_dlkm.ko
 btpower.ko
 radio-i2c-rtc6226-qca.ko
 btfmcodec.ko

@@ -45,6 +45,7 @@ qseecom_proxy.ko
 cqhci.ko
 sdhci-msm.ko
 nvmem_qcom-spmi-sdam.ko
+nvmem_qfprom.ko
 qcom_llcc_pmu.ko
 arm_smmu_pmu.ko
 phy-qcom-ufs.ko
@@ -71,6 +72,16 @@ mem_buf.ko
 mem_buf_msgq.ko
 mem-prot.ko
 cmd-db.ko
+cpu_phys_log_map.ko
+hdcp_qseecom_dlkm.ko
+libarc4.ko
+mac80211.ko
+rfkill.ko
+smmu_proxy_dlkm.ko
+tmecom-intf_dlkm.ko
+tz_log_dlkm.ko
+wcd_usbss_i2c.ko
+qts.ko
 crm-v2.ko
 debug_symbol.ko
 gic_intr_routing.ko
@@ -94,6 +105,7 @@ secure_buffer.ko
 smem.ko
 socinfo.ko
 spmi-pmic-arb.ko
+bcl_soc.ko
 qcom_tsens.ko
 ufshcd-crypto-qti.ko
 ufs-qcom.ko
@@ -164,10 +176,11 @@ haptic.ko
 nvt_36xxx.ko
 hqsysfs.ko
 lenovo_sys_temp.ko
-nvmem_qfprom.ko
+lenovo_thermal_control.ko
 pci-msm-drv.ko
 eom_driver.ko
 pci_phy_access.ko
+dwc_pcie_pmu.ko
 phy-qcom-eusb2-repeater.ko
 phy-qcom-m31-eusb2.ko
 phy-qcom-qmp-combo.ko
@@ -258,7 +271,6 @@ spi-msm-geni.ko
 spi-geni-qcom.ko
 spmi-pmic-arb-debug.ko
 bcl_pmic5.ko
-bcl_soc.ko
 cpu_hotplug.ko
 ddr_cdev.ko
 qcom-spmi-temp-alarm.ko
@@ -312,13 +324,3 @@ smcinvoke_dlkm.ko
 synx-driver.ko
 ipclite.ko
 cfg80211.ko
-cpu_phys_log_map.ko
-hdcp_qseecom_dlkm.ko
-libarc4.ko
-mac80211.ko
-rfkill.ko
-smmu_proxy_dlkm.ko
-tmecom-intf_dlkm.ko
-tz_log_dlkm.ko
-wcd_usbss_i2c.ko
-qts.ko
