@@ -71,10 +71,7 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('\\s*<MediaCodec\\b[^>]*(?:name="[^"]*(?:dolby|\\.dv\\.)[^"]*"|type="video/dolby-vision")[^>]*>[\\s\\S]*?</MediaCodec>', ''),
     'vendor/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini': blob_fixup()
         .call(enable_ull_scan_requests, need_tmp_dir=False),
-    'vendor/bin/init.qti.kernel.debug.sh': blob_fixup()
-        .regex_replace(r'\"660\"\|\"661\"\|\"704\"\|\"722\"\|\"723\"\)', '"660"|"661"|"704"|"722"|"723"|"743")'),
     'vendor/bin/init.qti.kernel.early_debug.sh': blob_fixup()
-        .regex_replace(r'\"727\"\)', '"727"|"743")')
         .regex_replace(r'Copyright \(c\) Qualcomm Technologies, Inc\. and/or its subsidiaries\.', 'Copyright (c) 2024-2025 Qualcomm Technologies, Inc.'),
     'vendor/lib64/liboffscreenpoweroptfeature.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v36.so'),
