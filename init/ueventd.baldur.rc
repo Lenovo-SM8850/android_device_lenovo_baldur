@@ -1,3 +1,16 @@
 # SPDX-License-Identifier: Apache-2.0
 
 import /odm/etc/ueventd.lenovo.rc
+
+firmware_directories /vendor/dcp_firmware/image/
+/dev/glink_pkt_hci_arbiter_chnl           0660   bluetooth  system
+/dev/glink_pkt_bt_socket_hal_chnl         0660   bluetooth  system
+/dev/glink_pkt_bt_gatt_offload_chnl       0660   bluetooth  system
+/sys/bus/platform/devices/a600000.hsusb	dynamic_disable	0220	root	usb
+/sys/bus/platform/devices/a600000.hsusb    mode        0660  system  usb
+/dev/block/platform/soc/1d84000.ufshc/by-name/oemowninfo 0660   system     system
+/dev/block/platform/soc/1d84000.ufshc/by-name/lenovoraw 0600   system     system
+/dev/power_state           0660   system      system
+/sys/devices/virtual/powercap/qpt/qpt\:0      name                  0440    root system
+/sys/devices/virtual/powercap/qpt/qpt\:0      energy_uj             0440    root system
+/sys/devices/virtual/powercap/qpt/qpt\:0      power_uw              0440    root system

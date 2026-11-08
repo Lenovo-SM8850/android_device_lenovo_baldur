@@ -83,6 +83,13 @@
         <!-- Spatial audio stream -->
         <stream type="PAL_STREAM_SPATIAL_AUDIO">
             <keys_and_values Direction="RX" Instance="1">
+                <!-- use deepbuffer stream only for SW spatial audio, as no difference b/w deep vs sw spatial -->
+                <!-- STREAMRX - PCM_DEEP_BUFFER  -->
+                <graph_kv key="0xA1000000" value="0xA1000001"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values Direction="RX" Instance="1" CustomConfig="spatial_audio_offload">
                 <!-- STREAMRX - SPATIAL_AUDIO_PLAYBACK  -->
                 <graph_kv key="0xA1000000" value="0xA1000018"/>
                 <!-- INSTANCE - INSTANCE_1 -->
@@ -816,6 +823,22 @@
                 <!-- BT_FORMAT - APTX_AD_R4 -->
                 <graph_kv key="0xB5000000" value="0xB5000008"/>
             </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_R4_V2" AbrEnabled="TRUE,FALSE" Hostless="TRUE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_R4_V2 -->
+                <graph_kv key="0xB5000000" value="0xB5000009"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_R4_V2" AbrEnabled="TRUE,FALSE" Hostless="FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_R4_V2 -->
+                <graph_kv key="0xB5000000" value="0xB5000009"/>
+            </keys_and_values>
         </device>
         <!-- BT BLE BROADCAST OUT Device -->
         <device id="PAL_DEVICE_OUT_BLUETOOTH_BLE_BROADCAST">
@@ -842,6 +865,14 @@
                 <graph_kv key="0xB4000000" value="0xB4000003"/>
                 <!-- BT_FORMAT - APTX_AD_R4 -->
                 <graph_kv key="0xB5000000" value="0xB5000008"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_R4_V2" AbrEnabled="TRUE,FALSE" Hostless="FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_R4_V2 -->
+                <graph_kv key="0xB5000000" value="0xB5000009"/>
             </keys_and_values>
         </device>
         <!-- BT A2DP IN Device -->
@@ -906,6 +937,66 @@
                 <graph_kv key="0xB4000000" value="0xB4000003"/>
                 <!-- BT_FORMAT - APTX_AD_R4 -->
                 <graph_kv key="0xB5000000" value="0xB5000008"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" Hostless="TRUE" SAOffloadMode="FALSE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" Hostless="TRUE" SAOffloadMode="TRUE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_LC3" Hostless="FALSE" SAOffloadMode="TRUE,FALSE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - LC3 -->
+                <graph_kv key="0xB5000000" value="0xB5000005"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_QLEA" Hostless="TRUE" SAOffloadMode="TRUE,FALSE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_R4" Hostless="TRUE" SAOffloadMode="TRUE,FALSE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_R4 -->
+                <graph_kv key="0xB5000000" value="0xB5000008"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_R4" Hostless="FALSE" SAOffloadMode="FALSE,FALSE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_R4 -->
+                <graph_kv key="0xB5000000" value="0xB5000008"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_R4_V2" Hostless="TRUE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_R4_V2 -->
+                <graph_kv key="0xB5000000" value="0xB5000009"/>
+            </keys_and_values>
+            <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD_R4_V2" Hostless="FALSE">
+                <!-- DEVICETX - BT_TX -->
+                <graph_kv key="0xA3000000" value="0xA3000002"/>
+                <!-- BT_PROFILE - BLE -->
+                <graph_kv key="0xB4000000" value="0xB4000003"/>
+                <!-- BT_FORMAT - APTX_AD_R4_V2 -->
+                <graph_kv key="0xB5000000" value="0xB5000009"/>
             </keys_and_values>
         </device>
         <!-- BT SCO OUT Device -->
@@ -1447,6 +1538,24 @@
                 <graph_kv key="0xA3000000" value="0xA3000004"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_SMECNS -->
                 <graph_kv key="0xAD000000" value="0xAD000008"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="mono-mic-ext-ec">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_SMECNS_EXT_EC -->
+                <graph_kv key="0xAD000000" value="0xAD00002D"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic-ext-ec">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_ENDFIRE_EXT_EC -->
+                <graph_kv key="0xAD000000" value="0xAD00002E"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="quad-mic-ext-ec">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_PRO_EXT_EC -->
+                <graph_kv key="0xAD000000" value="0xAD00002F"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="dual-mic">
                 <!-- DEVICETX - HANDSETMIC -->

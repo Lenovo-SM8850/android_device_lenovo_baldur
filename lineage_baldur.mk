@@ -27,8 +27,8 @@ PRODUCT_SYSTEM_NAME := TB323FU
 PRODUCT_SYSTEM_DEVICE := TB323FU
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="TB323FU-user 16 BQ2A.250831.001 253 release-keys" \
-    BuildFingerprint=Lenovo/TB323FU_PRC/TB323FU:16/BQ2A.250831.001/ZUXOS_2.0.12.236_260911_PRC:user/release-keys \
-    BuildSystemFingerprint=Lenovo/TB323FU_PRC/TB323FU:16/BQ2A.250831.001/ZUXOS_2.0.12.236_260911_PRC:user/release-keys \
+    BuildDesc="TB323FU-user 17 CQ2A.260712.001 50 release-keys" \
+    BuildFingerprint=Lenovo/TB323FU_PRC/TB323FU:17/CQ2A.260712.001/ZUXOS_2.5.10.019_261017_PRC:user/release-keys \
+    BuildSystemFingerprint=Lenovo/TB323FU_PRC/TB323FU:17/CQ2A.260712.001/ZUXOS_2.5.10.019_261017_PRC:user/release-keys \
     DeviceName=TB323FU \
     DeviceProduct=TB323FU

@@ -85,3 +85,35 @@ service setwlansardsi4 /vendor/bin/setwlansardsi4.sh
     user root
     oneshot
     group root root
+
+service profile_config_service /vendor/bin/profile_config_service.sh
+     user root
+     group root
+     disabled
+     oneshot
+
+# use minidump for user build by default
+on early-init && property:ro.build.type=user
+    write /sys/kernel/dload/dload_mode mini
+    write /sys/module/qcom_ramdump/parameters/enable_dump_collection 1
+    write /sys/kernel/dload/emmc_dload 1
+
+# use fulldump for userdebug build by default
+on early-init && property:ro.build.type=userdebug
+    write /sys/kernel/dload/dload_mode full
+    write /sys/module/qcom_ramdump/parameters/enable_dump_collection 1
+    write /sys/kernel/dload/emmc_dload 0
+
+# if persist.vendor.force_fulldump not null then force to do full dump
+on boot && property:persist.vendor.force_full_dump=*
+    write /sys/kernel/dload/dload_mode full
+    write /sys/kernel/dload/emmc_dload 0
+
+#enable modem ssr
+on property:ro.build.type=user
+    setprop persist.sys.ssr.enable_debug 1
+    setprop persist.vendor.ssr.enable_ramdumps 0
+    setprop persist.vendor.ssr.restart_level ALL_ENABLE
+
+on property:vendor.all.modules.ready=1
+    start start-subsys

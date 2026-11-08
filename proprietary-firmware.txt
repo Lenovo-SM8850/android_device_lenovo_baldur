@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from baldur (TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911).
+## are from baldur (TB323FU_CN_OPEN_USER_Q00037.0_A17_ZUXOS_2.5.10.019_ST_261017).
 
 # Exceptions:
 # abl.img: from baldur (TB323FU_CN_OPEN_USER_Q00020.0_A16_ZUXOS_2.0.12.236_ST_260911)

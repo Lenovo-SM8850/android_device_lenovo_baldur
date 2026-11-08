@@ -11,6 +11,9 @@ LENOVO_DEVICE_CONFIG_PATH := device/lenovo/baldur
 # Display
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml
+
 # Hardware configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/sku_alor/resourcemanager_alor_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_alor/resourcemanager_alor_cdp.xml \
@@ -66,6 +69,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Touch
 PRODUCT_PACKAGES += TouchscreenRotationTarget
+
+PRODUCT_PACKAGES += init.kernel.post_boot-canoe_default_6_2.sh
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/lenovo/sm8850-common/common.mk)

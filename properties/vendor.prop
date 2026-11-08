@@ -24,5 +24,8 @@ vendor.wv.oemcrypto.debug.enable_prov40=true
 # Fingerprint
 persist.vendor.qfp=true
 
+# Keep STC in SDR modes for HDR content
+ro.audio.spatializer_enabled=true
+
 # SurfaceFlinger
 persist.sys.sf.native_mode=257

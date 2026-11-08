@@ -48,33 +48,44 @@ ________________________________________________________________________________
         <Prop Name="vendor.qape.enable.qfps" Value="false" Target="canoe,alor_interposer,alor" />
 
         <!-- Qape configs for canoe -->
-        <Configs Target="canoe,alor_interposer,alor" Weight="0,1">
+        <Configs Target="canoe,alor_interposer,alor,whale" Weight="0,1">
             <MinimalisticJankRescuer>0</MinimalisticJankRescuer>
         </Configs>
 
-        <Configs Target="canoe,alor_interposer,alor" Weight="2">
+        <Configs Target="canoe,alor_interposer,alor,whale" Weight="2">
             <MinimalisticJankRescuer>0</MinimalisticJankRescuer>
         </Configs>
 
-        <Configs Target="canoe,alor_interposer,alor" Weight="0,1,2">
+        <Configs Target="canoe,alor_interposer,alor,whale" Weight="0,1,2">
             <GamePowerOptFeature>1</GamePowerOptFeature>
             <GFR_FLAG>1</GFR_FLAG>
+            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
+            <PhrMinRate>0</PhrMinRate>
+            <HighFpsPhrMinRate>0</HighFpsPhrMinRate>
         </Configs>
 
-        <Prop Name="vendor.qape.enable.engine" Value="true" Target="canoe,alor_interposer,alor"/>
+        <Prop Name="vendor.qape.enable.engine" Value="true" Target="canoe,alor_interposer,alor,whale"/>
 
-        <Configs Target="canoe,alor_interposer,alor" Package="DefaultGamePackage">
+        <Configs Target="canoe,alor_interposer,alor,whale" Package="DefaultGamePackage">
             <NumThreads_Def>0</NumThreads_Def>
         </Configs>
-        <Configs Target="canoe,alor_interposer,alor" Package="com.tencent.tmgp.sgame">
+        <Configs Target="canoe,alor_interposer,alor,whale" Package="com.tencent.tmgp.sgame">
             <NumThreads_60>2</NumThreads_60>
             <NumThreads_90>3</NumThreads_90>
             <NumThreads_120>3</NumThreads_120>
             <PhrMinRate>60</PhrMinRate>
             <HighFpsPhrMinRate>130</HighFpsPhrMinRate>
         </Configs>
-        <Configs Target="canoe,alor_interposer,alor" Package="com.netease.yyslscn">
+        <Configs Target="canoe,alor_interposer,alor,whale" Package="com.netease.yyslscn">
             <NumThreads_Def>3</NumThreads_Def>
         </Configs>
+
+        <Configs>
+            <SpuriousActvtList>
+                "com.android.permissioncontroller",
+                "com.android.example"
+            </SpuriousActvtList>
+        </Configs>
+
     </QapeConfigs>
 </QapeConfigStore>
