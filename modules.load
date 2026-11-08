@@ -279,7 +279,6 @@ sync_fence.ko
 msm_hw_fence.ko
 msm_hfi_core.ko
 msm-mmrm.ko
-nxp-nci.ko
 qcedev-mod_dlkm.ko
 qcrypto-msm_dlkm.ko
 qce50_dlkm.ko

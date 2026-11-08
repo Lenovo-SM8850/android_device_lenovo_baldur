@@ -421,11 +421,6 @@ vendor/lib64/rfs/dsp/libnspextensiongenericqnnprovider.so
 vendor/lib64/rfs/dsp/libnspextensionsuperresolutionprovider.so
 vendor/lib64/rfs/dsp/libsvdsp.so
 
-# NFC / UCE / QAPE / WFD native dependencies
-vendor/app/TimeService/TimeService.apk
-vendor/etc/seccomp_policy/qsap_qapeservice.policy
-vendor/lib64/libsn300u_fw.so
-
 # Performance
 vendor/etc/init/init.qccvendor.rc
 vendor/etc/init/vendor.qsap.mpamsvc.rc
@@ -534,6 +529,10 @@ vendor/etc/thermal_user_case.conf
 # Touchscreen firmware
 vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin
+
+# UCE / QAPE / WFD native dependencies
+vendor/app/TimeService/TimeService.apk
+vendor/etc/seccomp_policy/qsap_qapeservice.policy
 
 # Vendor
 vendor/bin/adpl
