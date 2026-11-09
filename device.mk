@@ -63,6 +63,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Touch
 PRODUCT_PACKAGES += LenovoTouchTarget
+$(call soong_config_set_bool,lenovotouchpolicy,report_threshold_text,true)
+$(call soong_config_set_bool,lenovotouchpolicy,game_edge_text,true)
+$(call soong_config_set,lenovotouchpolicy,support_pen_linking,-1)
+$(call soong_config_set,lenovotouchpolicy,support_pen_session_off,0)
 
 PRODUCT_PACKAGES += init.kernel.post_boot-canoe_default_6_2.sh
 

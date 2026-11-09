@@ -12,9 +12,4 @@ on post-fs-data
 on property:sys.lenovo.pen.type=2
     write /proc/pen_type 2
 
-# The controller has no separate linking state here.
-on property:sys.lenovo.pen.support=1
-    write /proc/support_pen 1
-
-on property:sys.lenovo.pen.support=0
-    write /proc/support_pen 0
+# The touch policy service owns the pen connection node.

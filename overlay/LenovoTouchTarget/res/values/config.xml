@@ -5,4 +5,7 @@
     <string name="config_edgeGridNode" translatable="false">/proc/edge_grid_zone</string>
     <string name="config_edgeGridValue" translatable="false">0,0,0,0</string>
     <bool name="config_supportsEdgeGrid">true</bool>
+    <string-array name="config_panelPenDevices" translatable="false">
+        <item>NVTCapacitivePen</item>
+    </string-array>
 </resources>
