@@ -22,7 +22,7 @@ TARGET_RECOVERY_UI_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/brig
 TARGET_RECOVERY_UI_MAX_BRIGHTNESS_FILE := /sys/class/backlight/panel0-backlight/max_brightness
 
 # Verified Boot
-BOARD_AVB_BOOT_ROLLBACK_INDEX := 1749081600
+BOARD_AVB_BOOT_ROLLBACK_INDEX := 1772668800
 
 # Include the proprietary files BoardConfig.
 include vendor/lenovo/baldur/BoardConfigVendor.mk
