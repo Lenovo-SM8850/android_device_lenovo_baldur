@@ -1,7 +1,5 @@
 # Attestation identity
-ro.product.brand_for_attestation=Lenovo
 ro.product.device_for_attestation=TB323FU
-ro.product.manufacturer_for_attestation=LENOVO
 ro.product.model_for_attestation=TB323FU
 ro.product.name_for_attestation=TB323FU
 
