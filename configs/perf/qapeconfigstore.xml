@@ -64,7 +64,7 @@ ________________________________________________________________________________
             <HighFpsPhrMinRate>0</HighFpsPhrMinRate>
         </Configs>
 
-        <Prop Name="vendor.qape.enable.engine" Value="true" Target="canoe,alor_interposer,alor,whale"/>
+        <Prop Name="vendor.qape.enable.engine" Value="false" Target="canoe,alor_interposer,alor,whale"/>
 
         <Configs Target="canoe,alor_interposer,alor,whale" Package="DefaultGamePackage">
             <NumThreads_Def>0</NumThreads_Def>
