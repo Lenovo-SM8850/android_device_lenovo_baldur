@@ -1,0 +1,3 @@
+recovery_only(`
+  get_prop(recovery, ota_prop)
+')

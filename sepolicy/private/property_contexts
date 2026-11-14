@@ -1,1 +1,2 @@
+ro.update_engine.avb_rollback_check u:object_r:ota_prop:s0 exact bool
 sys.lenovo.pen.type u:object_r:lenovo_pen_type_prop:s0 exact enum 2
